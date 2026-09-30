@@ -1,0 +1,105 @@
+{
+  "model": "seara/rubert-base-cased-russian-sentiment",
+  "n_samples": 151,
+  "accuracy": 0.6689,
+  "macro_f1": 0.6696,
+  "accuracy_ci95": [
+    0.596,
+    0.7353
+  ],
+  "macro_f1_ci95": [
+    0.5907,
+    0.7359
+  ],
+  "per_class": {
+    "positive": {
+      "precision": 0.7543859649122807,
+      "recall": 0.8113207547169812,
+      "f1-score": 0.7818181818181819,
+      "support": 53.0
+    },
+    "negative": {
+      "precision": 0.9615384615384616,
+      "recall": 0.5,
+      "f1-score": 0.6578947368421053,
+      "support": 50.0
+    },
+    "neutral": {
+      "precision": 0.4852941176470588,
+      "recall": 0.6875,
+      "f1-score": 0.5689655172413793,
+      "support": 48.0
+    },
+    "accuracy": 0.6688741721854304,
+    "macro avg": {
+      "precision": 0.733739514699267,
+      "recall": 0.6662735849056604,
+      "f1-score": 0.6695594786338889,
+      "support": 151.0
+    },
+    "weighted avg": {
+      "precision": 0.7374403765849853,
+      "recall": 0.6688741721854304,
+      "f1-score": 0.6731221543447358,
+      "support": 151.0
+    }
+  },
+  "confusion_matrix": {
+    "labels": [
+      "positive",
+      "negative",
+      "neutral"
+    ],
+    "matrix": [
+      [
+        43,
+        0,
+        10
+      ],
+      [
+        0,
+        25,
+        25
+      ],
+      [
+        14,
+        1,
+        33
+      ]
+    ]
+  },
+  "confidence_threshold_analysis": [
+    {
+      "threshold": 0.0,
+      "coverage": 1.0,
+      "accuracy": 0.6689
+    },
+    {
+      "threshold": 0.5,
+      "coverage": 0.9868,
+      "accuracy": 0.6711
+    },
+    {
+      "threshold": 0.6,
+      "coverage": 0.8013,
+      "accuracy": 0.7025
+    },
+    {
+      "threshold": 0.7,
+      "coverage": 0.6159,
+      "accuracy": 0.7527
+    },
+    {
+      "threshold": 0.8,
+      "coverage": 0.4238,
+      "accuracy": 0.9062
+    },
+    {
+      "threshold": 0.9,
+      "coverage": 0.2715,
+      "accuracy": 0.9512
+    }
+  ],
+  "texts_per_second": 168.8,
+  "ms_per_text": 5.9
+}

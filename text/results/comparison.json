@@ -1,0 +1,10 @@
+{
+  "model_a": "seara/rubert-tiny2-russian-sentiment",
+  "model_b": "seara/rubert-base-cased-russian-sentiment",
+  "macro_f1_diff_mean": 0.0597,
+  "macro_f1_diff_ci95": [
+    -0.011,
+    0.1335
+  ],
+  "significant_at_95": false
+}

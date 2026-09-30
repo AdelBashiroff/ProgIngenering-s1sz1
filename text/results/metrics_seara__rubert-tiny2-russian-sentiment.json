@@ -1,0 +1,105 @@
+{
+  "model": "seara/rubert-tiny2-russian-sentiment",
+  "n_samples": 151,
+  "accuracy": 0.7219,
+  "macro_f1": 0.7291,
+  "accuracy_ci95": [
+    0.649,
+    0.7949
+  ],
+  "macro_f1_ci95": [
+    0.6566,
+    0.8023
+  ],
+  "per_class": {
+    "positive": {
+      "precision": 0.7659574468085106,
+      "recall": 0.6792452830188679,
+      "f1-score": 0.72,
+      "support": 53.0
+    },
+    "negative": {
+      "precision": 0.9473684210526315,
+      "recall": 0.72,
+      "f1-score": 0.8181818181818182,
+      "support": 50.0
+    },
+    "neutral": {
+      "precision": 0.5606060606060606,
+      "recall": 0.7708333333333334,
+      "f1-score": 0.6491228070175439,
+      "support": 48.0
+    },
+    "accuracy": 0.7218543046357616,
+    "macro avg": {
+      "precision": 0.7579773094890676,
+      "recall": 0.7233595387840671,
+      "f1-score": 0.7291015417331206,
+      "support": 151.0
+    },
+    "weighted avg": {
+      "precision": 0.7607500439905533,
+      "recall": 0.7218543046357616,
+      "f1-score": 0.7299800373902848,
+      "support": 151.0
+    }
+  },
+  "confusion_matrix": {
+    "labels": [
+      "positive",
+      "negative",
+      "neutral"
+    ],
+    "matrix": [
+      [
+        36,
+        2,
+        15
+      ],
+      [
+        0,
+        36,
+        14
+      ],
+      [
+        11,
+        0,
+        37
+      ]
+    ]
+  },
+  "confidence_threshold_analysis": [
+    {
+      "threshold": 0.0,
+      "coverage": 1.0,
+      "accuracy": 0.7219
+    },
+    {
+      "threshold": 0.5,
+      "coverage": 0.9669,
+      "accuracy": 0.7192
+    },
+    {
+      "threshold": 0.6,
+      "coverage": 0.7616,
+      "accuracy": 0.7565
+    },
+    {
+      "threshold": 0.7,
+      "coverage": 0.5762,
+      "accuracy": 0.8046
+    },
+    {
+      "threshold": 0.8,
+      "coverage": 0.3311,
+      "accuracy": 0.9
+    },
+    {
+      "threshold": 0.9,
+      "coverage": 0.1854,
+      "accuracy": 0.9643
+    }
+  ],
+  "texts_per_second": 222.24,
+  "ms_per_text": 4.5
+}
