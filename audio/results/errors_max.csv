@@ -1,0 +1,25 @@
+filename,label,predicted,score,yamnet_top1,yamnet_top1_score,top1_in_class,top5_in_class
+1-187207-A-20.wav,crying_baby,rooster,0.9442,"Chicken, rooster",0.9442,False,False
+1-29561-A-10.wav,rain,crackling_fire,0.2104,Vehicle,0.7268,False,False
+1-39901-B-11.wav,sea_waves,rain,0.2071,"Boat, Water vehicle",0.9452,False,False
+1-47250-A-41.wav,chainsaw,helicopter,0.0358,Vehicle,0.913,False,False
+2-130978-A-21.wav,sneezing,crying_baby,0.0801,Silence,1.0,False,False
+2-131943-A-38.wav,clock_tick,rooster,0.2348,"Chink, clink",0.4764,False,False
+3-107219-A-1.wav,rooster,crying_baby,0.5654,Silence,1.0,False,False
+3-140774-A-10.wav,rain,helicopter,0.2183,Fireworks,0.9153,False,False
+3-147965-A-12.wav,crackling_fire,rain,0.0987,Boiling,0.8699,False,False
+3-150979-A-40.wav,helicopter,sea_waves,0.0484,Wind,0.4407,False,False
+3-150979-C-40.wav,helicopter,sea_waves,0.074,Vehicle,0.8643,False,False
+4-149294-B-41.wav,chainsaw,helicopter,0.0266,Vehicle,0.5557,False,False
+4-157611-A-41.wav,chainsaw,sea_waves,0.0079,Vehicle,0.9678,False,False
+4-175945-A-38.wav,clock_tick,rooster,0.6542,Animal,0.7283,False,False
+4-181563-A-12.wav,crackling_fire,rain,0.8997,Rain,0.8997,False,True
+4-182369-A-12.wav,crackling_fire,rain,0.8715,Rain,0.8715,False,False
+5-170338-A-41.wav,chainsaw,sea_waves,0.0113,Vehicle,0.8805,False,False
+5-177957-E-40.wav,helicopter,crackling_fire,0.003,Vehicle,0.9254,False,False
+5-186924-A-12.wav,crackling_fire,rain,0.8471,Rain,0.8471,False,False
+5-213802-A-12.wav,crackling_fire,helicopter,0.6125,Vehicle,0.7317,False,False
+5-215658-A-12.wav,crackling_fire,rain,0.3644,Clip-clop,0.8333,False,False
+5-215658-B-12.wav,crackling_fire,rain,0.7961,Rain,0.7961,False,False
+5-220955-A-40.wav,helicopter,crackling_fire,0.0045,Timpani,0.6422,False,False
+5-221593-A-21.wav,sneezing,crying_baby,0.0316,Silence,1.0,False,False

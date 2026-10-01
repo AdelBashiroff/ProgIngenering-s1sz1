@@ -1,0 +1,265 @@
+{
+  "aggregate": "mean",
+  "n_samples": 400,
+  "closed_set_10_classes": {
+    "accuracy": 0.9425,
+    "macro_f1": 0.9426,
+    "accuracy_ci95": [
+      0.92,
+      0.965
+    ],
+    "macro_f1_ci95": [
+      0.9187,
+      0.9636
+    ],
+    "per_class": {
+      "dog": {
+        "precision": 1.0,
+        "recall": 1.0,
+        "f1-score": 1.0,
+        "support": 40.0
+      },
+      "rooster": {
+        "precision": 0.9285714285714286,
+        "recall": 0.975,
+        "f1-score": 0.9512195121951219,
+        "support": 40.0
+      },
+      "rain": {
+        "precision": 0.8809523809523809,
+        "recall": 0.925,
+        "f1-score": 0.9024390243902439,
+        "support": 40.0
+      },
+      "sea_waves": {
+        "precision": 0.9302325581395349,
+        "recall": 1.0,
+        "f1-score": 0.963855421686747,
+        "support": 40.0
+      },
+      "crackling_fire": {
+        "precision": 0.8947368421052632,
+        "recall": 0.85,
+        "f1-score": 0.8717948717948718,
+        "support": 40.0
+      },
+      "crying_baby": {
+        "precision": 0.9285714285714286,
+        "recall": 0.975,
+        "f1-score": 0.9512195121951219,
+        "support": 40.0
+      },
+      "sneezing": {
+        "precision": 1.0,
+        "recall": 0.95,
+        "f1-score": 0.9743589743589743,
+        "support": 40.0
+      },
+      "clock_tick": {
+        "precision": 1.0,
+        "recall": 0.95,
+        "f1-score": 0.9743589743589743,
+        "support": 40.0
+      },
+      "helicopter": {
+        "precision": 0.8780487804878049,
+        "recall": 0.9,
+        "f1-score": 0.8888888888888888,
+        "support": 40.0
+      },
+      "chainsaw": {
+        "precision": 1.0,
+        "recall": 0.9,
+        "f1-score": 0.9473684210526315,
+        "support": 40.0
+      },
+      "accuracy": 0.9425,
+      "macro avg": {
+        "precision": 0.9441113418827841,
+        "recall": 0.9425000000000001,
+        "f1-score": 0.9425503600921576,
+        "support": 400.0
+      },
+      "weighted avg": {
+        "precision": 0.9441113418827842,
+        "recall": 0.9425,
+        "f1-score": 0.9425503600921575,
+        "support": 400.0
+      }
+    },
+    "confusion_matrix": {
+      "labels": [
+        "dog",
+        "rooster",
+        "rain",
+        "sea_waves",
+        "crackling_fire",
+        "crying_baby",
+        "sneezing",
+        "clock_tick",
+        "helicopter",
+        "chainsaw"
+      ],
+      "matrix": [
+        [
+          40,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        [
+          0,
+          39,
+          0,
+          0,
+          0,
+          1,
+          0,
+          0,
+          0,
+          0
+        ],
+        [
+          0,
+          0,
+          37,
+          1,
+          1,
+          0,
+          0,
+          0,
+          1,
+          0
+        ],
+        [
+          0,
+          0,
+          0,
+          40,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        [
+          0,
+          0,
+          5,
+          0,
+          34,
+          0,
+          0,
+          0,
+          1,
+          0
+        ],
+        [
+          0,
+          1,
+          0,
+          0,
+          0,
+          39,
+          0,
+          0,
+          0,
+          0
+        ],
+        [
+          0,
+          0,
+          0,
+          0,
+          0,
+          2,
+          38,
+          0,
+          0,
+          0
+        ],
+        [
+          0,
+          2,
+          0,
+          0,
+          0,
+          0,
+          0,
+          38,
+          0,
+          0
+        ],
+        [
+          0,
+          0,
+          0,
+          2,
+          2,
+          0,
+          0,
+          0,
+          36,
+          0
+        ],
+        [
+          0,
+          0,
+          0,
+          0,
+          1,
+          0,
+          0,
+          0,
+          3,
+          36
+        ]
+      ]
+    },
+    "confidence_threshold_analysis": [
+      {
+        "threshold": 0.0,
+        "coverage": 1.0,
+        "accuracy": 0.9425
+      },
+      {
+        "threshold": 0.05,
+        "coverage": 0.8525,
+        "accuracy": 0.9707
+      },
+      {
+        "threshold": 0.1,
+        "coverage": 0.75,
+        "accuracy": 0.9767
+      },
+      {
+        "threshold": 0.2,
+        "coverage": 0.6,
+        "accuracy": 0.9792
+      },
+      {
+        "threshold": 0.3,
+        "coverage": 0.4875,
+        "accuracy": 0.9744
+      },
+      {
+        "threshold": 0.5,
+        "coverage": 0.285,
+        "accuracy": 0.9912
+      }
+    ]
+  },
+  "open_set_521_classes": {
+    "top1_in_mapped_classes": 0.2375,
+    "top5_in_mapped_classes": 0.795
+  },
+  "ms_per_clip": 16.4,
+  "clips_per_second": 60.89
+}

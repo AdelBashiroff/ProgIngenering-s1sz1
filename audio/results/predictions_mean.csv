@@ -1,0 +1,401 @@
+filename,label,predicted,score,yamnet_top1,yamnet_top1_score,top1_in_class,top5_in_class,correct
+1-100032-A-0.wav,dog,dog,0.1095,Silence,0.702,False,True,True
+1-110389-A-0.wav,dog,dog,0.0961,Silence,0.9,False,True,True
+1-116765-A-41.wav,chainsaw,chainsaw,0.1277,Engine,0.214,False,True,True
+1-17150-A-12.wav,crackling_fire,crackling_fire,0.1856,Fire,0.1856,True,True,True
+1-172649-A-40.wav,helicopter,helicopter,0.0056,Vehicle,0.2746,False,False,True
+1-172649-B-40.wav,helicopter,helicopter,0.0028,Vehicle,0.2903,False,False,True
+1-172649-C-40.wav,helicopter,helicopter,0.0367,Vehicle,0.4825,False,False,True
+1-172649-D-40.wav,helicopter,helicopter,0.3997,Helicopter,0.3997,True,True,True
+1-172649-E-40.wav,helicopter,helicopter,0.3021,Vehicle,0.7768,False,True,True
+1-172649-F-40.wav,helicopter,helicopter,0.2462,Vehicle,0.8682,False,True,True
+1-17367-A-10.wav,rain,rain,0.6262,Water,0.7756,False,True,True
+1-17565-A-12.wav,crackling_fire,crackling_fire,0.2664,"Crumpling, crinkling",0.4412,False,True,True
+1-17742-A-12.wav,crackling_fire,crackling_fire,0.1297,Keys jangling,0.2047,False,True,True
+1-17808-A-12.wav,crackling_fire,crackling_fire,0.2819,Patter,0.4919,False,True,True
+1-17808-B-12.wav,crackling_fire,crackling_fire,0.0903,Patter,0.2225,False,True,True
+1-181071-A-40.wav,helicopter,helicopter,0.6532,Helicopter,0.6532,True,True,True
+1-181071-B-40.wav,helicopter,helicopter,0.8146,Helicopter,0.8146,True,True,True
+1-187207-A-20.wav,crying_baby,rooster,0.0945,Speech,0.2896,False,False,False
+1-19898-A-41.wav,chainsaw,chainsaw,0.5654,Chainsaw,0.5654,True,True,True
+1-19898-B-41.wav,chainsaw,chainsaw,0.6139,Chainsaw,0.6139,True,True,True
+1-19898-C-41.wav,chainsaw,chainsaw,0.4624,Chainsaw,0.4624,True,True,True
+1-211527-A-20.wav,crying_baby,crying_baby,0.4313,"Crying, sobbing",0.4313,True,True,True
+1-211527-B-20.wav,crying_baby,crying_baby,0.0929,Laughter,0.6332,False,True,True
+1-211527-C-20.wav,crying_baby,crying_baby,0.7508,"Crying, sobbing",0.7508,True,True,True
+1-21189-A-10.wav,rain,rain,0.6658,Water,0.7954,False,True,True
+1-21934-A-38.wav,clock_tick,clock_tick,0.1242,Music,0.178,False,True,True
+1-21935-A-38.wav,clock_tick,clock_tick,0.3829,Clock,0.3829,True,True,True
+1-22694-A-20.wav,crying_baby,crying_baby,0.6675,"Crying, sobbing",0.6675,True,True,True
+1-22694-B-20.wav,crying_baby,crying_baby,0.4342,"Crying, sobbing",0.4342,True,True,True
+1-26143-A-21.wav,sneezing,sneezing,0.0389,Silence,0.746,False,True,True
+1-26222-A-10.wav,rain,rain,0.5763,Water,0.6731,False,True,True
+1-26806-A-1.wav,rooster,rooster,0.133,Silence,0.4125,False,True,True
+1-27724-A-1.wav,rooster,rooster,0.0057,Silence,0.509,False,False,True
+1-28135-A-11.wav,sea_waves,sea_waves,0.8121,Ocean,0.8121,True,True,True
+1-28135-B-11.wav,sea_waves,sea_waves,0.6667,Water,0.6757,False,True,True
+1-29561-A-10.wav,rain,crackling_fire,0.0326,Vehicle,0.4624,False,False,False
+1-29680-A-21.wav,sneezing,sneezing,0.0768,Silence,0.5923,False,True,True
+1-30226-A-0.wav,dog,dog,0.5725,Animal,0.6202,False,True,True
+1-30344-A-0.wav,dog,dog,0.8292,"Domestic animals, pets",0.8322,False,True,True
+1-31748-A-21.wav,sneezing,sneezing,0.0632,Silence,0.8017,False,True,True
+1-32318-A-0.wav,dog,dog,0.7474,Dog,0.7474,True,True,True
+1-34119-A-1.wav,rooster,rooster,0.2723,Silence,0.6005,False,True,True
+1-34119-B-1.wav,rooster,rooster,0.2642,Silence,0.5922,False,True,True
+1-35687-A-38.wav,clock_tick,clock_tick,0.0847,"Inside, small room",0.2422,False,True,True
+1-39901-A-11.wav,sea_waves,sea_waves,0.0371,"Boat, Water vehicle",0.6687,False,False,True
+1-39901-B-11.wav,sea_waves,sea_waves,0.0543,Vehicle,0.547,False,False,True
+1-39923-A-1.wav,rooster,rooster,0.4891,Animal,0.5002,False,True,True
+1-40730-A-1.wav,rooster,rooster,0.4866,Animal,0.5071,False,True,True
+1-4211-A-12.wav,crackling_fire,crackling_fire,0.0975,Cap gun,0.1561,False,False,True
+1-42139-A-38.wav,clock_tick,clock_tick,0.1961,Mechanisms,0.3715,False,True,True
+1-43382-A-1.wav,rooster,rooster,0.4804,Animal,0.4923,False,True,True
+1-43760-A-11.wav,sea_waves,sea_waves,0.0186,Stream,0.922,False,False,True
+1-44831-A-1.wav,rooster,rooster,0.263,Silence,0.601,False,True,True
+1-46272-A-12.wav,crackling_fire,crackling_fire,0.2203,Fire,0.2203,True,True,True
+1-47250-A-41.wav,chainsaw,helicopter,0.0038,Vehicle,0.7301,False,False,False
+1-47250-B-41.wav,chainsaw,chainsaw,0.002,Vehicle,0.5304,False,False,True
+1-47273-A-21.wav,sneezing,sneezing,0.2812,Silence,0.6527,False,True,True
+1-47274-A-21.wav,sneezing,sneezing,0.1332,Silence,0.5107,False,True,True
+1-48413-A-38.wav,clock_tick,clock_tick,0.5822,Clock,0.5822,True,True,True
+1-50060-A-10.wav,rain,rain,0.6621,Water,0.8454,False,True,True
+1-54505-A-21.wav,sneezing,sneezing,0.0481,Silence,0.5003,False,False,True
+1-54958-A-10.wav,rain,rain,0.5432,Water,0.8508,False,True,True
+1-56311-A-10.wav,rain,rain,0.6139,Rain,0.6139,True,True,True
+1-57163-A-38.wav,clock_tick,clock_tick,0.587,Clock,0.587,True,True,True
+1-59324-A-21.wav,sneezing,sneezing,0.0063,Silence,0.8001,False,False,True
+1-59513-A-0.wav,dog,dog,0.8629,Dog,0.8629,True,True,True
+1-60997-A-20.wav,crying_baby,crying_baby,0.7118,"Crying, sobbing",0.7118,True,True,True
+1-60997-B-20.wav,crying_baby,crying_baby,0.9773,"Crying, sobbing",0.9773,True,True,True
+1-61252-A-11.wav,sea_waves,sea_waves,0.8612,Ocean,0.8612,True,True,True
+1-62849-A-38.wav,clock_tick,clock_tick,0.1085,Mechanisms,0.1366,False,True,True
+1-62850-A-38.wav,clock_tick,clock_tick,0.0275,"Inside, small room",0.0947,False,False,True
+1-63871-A-10.wav,rain,rain,0.2272,Water,0.3274,False,True,True
+1-64398-A-41.wav,chainsaw,chainsaw,0.796,Chainsaw,0.796,True,True,True
+1-64398-B-41.wav,chainsaw,chainsaw,0.4272,Light engine (high frequency),0.4311,False,True,True
+1-7057-A-12.wav,crackling_fire,crackling_fire,0.148,Patter,0.2131,False,True,True
+1-81883-A-21.wav,sneezing,sneezing,0.3085,Silence,0.6177,False,True,True
+1-85362-A-0.wav,dog,dog,0.8502,"Domestic animals, pets",0.859,False,True,True
+1-91359-A-11.wav,sea_waves,sea_waves,0.1572,Vehicle,0.566,False,True,True
+1-91359-B-11.wav,sea_waves,sea_waves,0.2321,Vehicle,0.4376,False,True,True
+1-97392-A-0.wav,dog,dog,0.5267,Animal,0.5303,False,True,True
+2-100786-A-1.wav,rooster,rooster,0.3109,Silence,0.5003,False,True,True
+2-101676-A-10.wav,rain,rain,0.2475,Water,0.5706,False,True,True
+2-102852-A-11.wav,sea_waves,sea_waves,0.2388,Water,0.8734,False,True,True
+2-107351-A-20.wav,crying_baby,crying_baby,0.6769,"Crying, sobbing",0.6769,True,True,True
+2-107351-B-20.wav,crying_baby,crying_baby,0.5099,"Crying, sobbing",0.5099,True,True,True
+2-109505-A-21.wav,sneezing,sneezing,0.0075,Silence,0.8732,False,True,True
+2-114280-A-0.wav,dog,dog,0.9431,Animal,0.9707,False,True,True
+2-114587-A-0.wav,dog,dog,0.7217,"Domestic animals, pets",0.7492,False,True,True
+2-116400-A-0.wav,dog,dog,0.6418,Animal,0.6687,False,True,True
+2-117271-A-0.wav,dog,dog,0.9379,Animal,0.9843,False,True,True
+2-117625-A-10.wav,rain,rain,0.5918,Water,0.731,False,True,True
+2-118072-A-0.wav,dog,dog,0.1223,Silence,0.7866,False,True,True
+2-118104-A-21.wav,sneezing,sneezing,0.2022,Silence,0.4007,False,True,True
+2-118964-A-0.wav,dog,dog,0.1977,Silence,0.7313,False,True,True
+2-119102-A-21.wav,sneezing,sneezing,0.191,Silence,0.8,False,True,True
+2-119748-A-38.wav,clock_tick,clock_tick,0.0063,Sound effect,0.1105,False,False,True
+2-122104-A-0.wav,dog,dog,0.7866,Animal,0.8246,False,True,True
+2-122104-B-0.wav,dog,dog,0.6716,Animal,0.6917,False,True,True
+2-124662-A-11.wav,sea_waves,sea_waves,0.1886,"Boat, Water vehicle",0.4112,False,True,True
+2-125966-A-11.wav,sea_waves,sea_waves,0.0096,"Boat, Water vehicle",0.5275,False,False,True
+2-127108-A-38.wav,clock_tick,clock_tick,0.4382,Clock,0.4382,True,True,True
+2-128631-A-21.wav,sneezing,sneezing,0.1018,Silence,0.8001,False,True,True
+2-130978-A-21.wav,sneezing,crying_baby,0.008,Silence,0.7158,False,False,False
+2-130979-A-21.wav,sneezing,sneezing,0.0781,Silence,0.5992,False,False,True
+2-131943-A-38.wav,clock_tick,rooster,0.0405,Glass,0.1616,False,False,False
+2-132157-A-11.wav,sea_waves,sea_waves,0.2494,"Boat, Water vehicle",0.4607,False,True,True
+2-132157-B-11.wav,sea_waves,sea_waves,0.226,"Boat, Water vehicle",0.446,False,False,True
+2-133863-A-11.wav,sea_waves,sea_waves,0.5185,Ocean,0.5185,True,True,True
+2-134700-A-38.wav,clock_tick,clock_tick,0.0179,Telephone,0.1039,False,False,True
+2-135728-A-38.wav,clock_tick,clock_tick,0.2206,"Inside, small room",0.2353,False,True,True
+2-137162-A-11.wav,sea_waves,sea_waves,0.7057,Water,0.8346,False,True,True
+2-140147-A-38.wav,clock_tick,clock_tick,0.0824,Wood,0.1387,False,True,True
+2-141584-A-38.wav,clock_tick,clock_tick,0.1277,Animal,0.1477,False,True,True
+2-151079-A-20.wav,crying_baby,crying_baby,0.6185,"Crying, sobbing",0.6185,True,True,True
+2-155801-A-11.wav,sea_waves,sea_waves,0.5474,Water,0.6446,False,True,True
+2-18766-A-12.wav,crackling_fire,crackling_fire,0.0322,Tearing,0.377,False,False,True
+2-18766-B-12.wav,crackling_fire,crackling_fire,0.0486,Scissors,0.216,False,False,True
+2-188822-A-40.wav,helicopter,helicopter,0.0447,Vehicle,0.8153,False,False,True
+2-188822-B-40.wav,helicopter,helicopter,0.163,Vehicle,0.6762,False,True,True
+2-188822-C-40.wav,helicopter,helicopter,0.3615,Vehicle,0.6505,False,True,True
+2-188822-D-40.wav,helicopter,helicopter,0.3755,Vehicle,0.7626,False,True,True
+2-28314-A-12.wav,crackling_fire,crackling_fire,0.1838,Patter,0.2243,False,True,True
+2-28314-B-12.wav,crackling_fire,crackling_fire,0.0834,Patter,0.2849,False,True,True
+2-30322-A-12.wav,crackling_fire,crackling_fire,0.1996,Patter,0.209,False,True,True
+2-30322-B-12.wav,crackling_fire,crackling_fire,0.0716,Patter,0.1389,False,False,True
+2-37806-A-40.wav,helicopter,helicopter,0.1437,Vehicle,0.7709,False,True,True
+2-37806-B-40.wav,helicopter,helicopter,0.193,Vehicle,0.9121,False,True,True
+2-37806-C-40.wav,helicopter,helicopter,0.1465,Vehicle,0.8722,False,True,True
+2-37806-D-40.wav,helicopter,helicopter,0.4675,Vehicle,0.8869,False,True,True
+2-50665-A-20.wav,crying_baby,crying_baby,0.275,Silence,0.4003,False,True,True
+2-50666-A-20.wav,crying_baby,crying_baby,0.3427,"Crying, sobbing",0.3427,True,True,True
+2-50667-A-41.wav,chainsaw,chainsaw,0.3863,Chainsaw,0.3863,True,True,True
+2-50667-B-41.wav,chainsaw,chainsaw,0.8123,Chainsaw,0.8123,True,True,True
+2-50668-A-41.wav,chainsaw,chainsaw,0.1811,Vehicle,0.4184,False,True,True
+2-50668-B-41.wav,chainsaw,chainsaw,0.1067,Vehicle,0.2738,False,False,True
+2-61311-A-12.wav,crackling_fire,crackling_fire,0.1146,Crack,0.1923,False,False,True
+2-65747-A-12.wav,crackling_fire,crackling_fire,0.1407,Bicycle,0.2336,False,True,True
+2-65750-A-1.wav,rooster,rooster,0.2431,Silence,0.6001,False,True,True
+2-66637-A-20.wav,crying_baby,crying_baby,0.384,"Crying, sobbing",0.384,True,True,True
+2-66637-B-20.wav,crying_baby,crying_baby,0.4842,"Crying, sobbing",0.4842,True,True,True
+2-68391-A-41.wav,chainsaw,chainsaw,0.4771,Chainsaw,0.4771,True,True,True
+2-68391-B-41.wav,chainsaw,chainsaw,0.676,Light engine (high frequency),0.7358,False,True,True
+2-71162-A-1.wav,rooster,rooster,0.3357,Animal,0.4574,False,True,True
+2-72970-A-10.wav,rain,rain,0.1708,Water,0.2607,False,True,True
+2-73027-A-10.wav,rain,rain,0.1204,Water,0.8208,False,True,True
+2-73260-A-10.wav,rain,rain,0.0536,Wild animals,0.5013,False,False,True
+2-77945-A-41.wav,chainsaw,chainsaw,0.3621,Engine,0.3753,False,True,True
+2-77945-B-41.wav,chainsaw,chainsaw,0.7662,Chainsaw,0.7662,True,True,True
+2-80482-A-20.wav,crying_baby,crying_baby,0.8439,"Crying, sobbing",0.8439,True,True,True
+2-81270-A-1.wav,rooster,rooster,0.5734,Animal,0.6562,False,True,True
+2-81731-A-10.wav,rain,rain,0.1559,Water,0.2778,False,True,True
+2-82367-A-10.wav,rain,rain,0.6605,Rain,0.6605,True,True,True
+2-82538-A-21.wav,sneezing,sneezing,0.0894,Silence,0.7001,False,True,True
+2-87781-A-10.wav,rain,rain,0.5189,Water,0.5865,False,True,True
+2-88724-A-38.wav,clock_tick,clock_tick,0.388,Clock,0.388,True,True,True
+2-93030-A-21.wav,sneezing,sneezing,0.1287,Silence,0.3004,False,True,True
+2-95035-A-1.wav,rooster,rooster,0.3438,Silence,0.5,False,True,True
+2-95258-A-1.wav,rooster,rooster,0.4713,Animal,0.4974,False,True,True
+2-95258-B-1.wav,rooster,rooster,0.4749,Animal,0.698,False,True,True
+2-96460-A-1.wav,rooster,rooster,0.03,Silence,0.6009,False,False,True
+3-104632-A-12.wav,crackling_fire,crackling_fire,0.002,Speech,0.6488,False,False,True
+3-104958-A-12.wav,crackling_fire,crackling_fire,0.0702,Silence,0.3572,False,False,True
+3-107219-A-1.wav,rooster,crying_baby,0.0686,Silence,0.6003,False,False,False
+3-116135-A-1.wav,rooster,rooster,0.2005,Animal,0.4127,False,False,True
+3-118656-A-41.wav,chainsaw,chainsaw,0.4369,Chainsaw,0.4369,True,True,True
+3-118657-A-41.wav,chainsaw,chainsaw,0.0397,Vehicle,0.4275,False,False,True
+3-118657-B-41.wav,chainsaw,chainsaw,0.0104,Vehicle,0.4047,False,False,True
+3-118658-A-41.wav,chainsaw,chainsaw,0.23,Vehicle,0.3509,False,True,True
+3-118658-B-41.wav,chainsaw,chainsaw,0.3077,Tools,0.3083,False,True,True
+3-118972-A-41.wav,chainsaw,chainsaw,0.3816,Light engine (high frequency),0.4109,False,True,True
+3-118972-B-41.wav,chainsaw,chainsaw,0.676,Chainsaw,0.676,True,True,True
+3-120644-A-12.wav,crackling_fire,crackling_fire,0.0713,Clip-clop,0.266,False,False,True
+3-132852-A-10.wav,rain,rain,0.0894,Vehicle,0.2392,False,True,True
+3-134049-A-1.wav,rooster,rooster,0.477,Animal,0.5675,False,True,True
+3-136288-A-0.wav,dog,dog,0.3502,"Domestic animals, pets",0.3544,False,True,True
+3-137152-A-1.wav,rooster,rooster,0.3855,Silence,0.5,False,True,True
+3-140774-A-10.wav,rain,helicopter,0.0724,Vehicle,0.2647,False,False,False
+3-141684-A-21.wav,sneezing,sneezing,0.143,Silence,0.4005,False,True,True
+3-142005-A-10.wav,rain,rain,0.3616,Water,0.807,False,True,True
+3-142006-A-10.wav,rain,sea_waves,0.3347,Water,0.8426,False,False,False
+3-142593-A-38.wav,clock_tick,clock_tick,0.0437,Animal,0.1566,False,False,True
+3-142601-A-21.wav,sneezing,sneezing,0.1441,Silence,0.7006,False,True,True
+3-142605-A-21.wav,sneezing,sneezing,0.1755,Silence,0.724,False,True,True
+3-143119-A-21.wav,sneezing,sneezing,0.1434,Silence,0.6068,False,True,True
+3-143929-A-10.wav,rain,rain,0.5853,Rain,0.5853,True,True,True
+3-143933-A-38.wav,clock_tick,clock_tick,0.2439,Clock,0.2439,True,True,True
+3-144028-A-0.wav,dog,dog,0.912,"Domestic animals, pets",0.9196,False,True,True
+3-144692-A-21.wav,sneezing,sneezing,0.2678,Speech,0.2807,False,True,True
+3-144827-A-11.wav,sea_waves,sea_waves,0.3501,Water,0.3964,False,True,True
+3-144827-B-11.wav,sea_waves,sea_waves,0.2816,Water,0.347,False,True,True
+3-145382-A-1.wav,rooster,rooster,0.3007,Silence,0.5,False,True,True
+3-145774-A-12.wav,crackling_fire,crackling_fire,0.0737,"Inside, small room",0.2446,False,False,True
+3-147965-A-12.wav,crackling_fire,rain,0.0383,Boiling,0.406,False,False,False
+3-148330-A-21.wav,sneezing,sneezing,0.1065,Silence,0.7989,False,True,True
+3-149189-A-1.wav,rooster,rooster,0.3833,Silence,0.5002,False,True,True
+3-150231-A-21.wav,sneezing,sneezing,0.1997,Silence,0.7999,False,True,True
+3-150363-A-38.wav,clock_tick,clock_tick,0.829,Clock,0.829,True,True,True
+3-150979-A-40.wav,helicopter,sea_waves,0.0151,Wind,0.237,False,False,False
+3-150979-B-40.wav,helicopter,helicopter,0.0072,Vehicle,0.7632,False,False,True
+3-150979-C-40.wav,helicopter,sea_waves,0.0135,Vehicle,0.7082,False,False,False
+3-151080-A-20.wav,crying_baby,crying_baby,0.8719,"Crying, sobbing",0.8719,True,True,True
+3-151081-A-20.wav,crying_baby,crying_baby,0.9549,"Crying, sobbing",0.9549,True,True,True
+3-151081-B-20.wav,crying_baby,crying_baby,0.6244,"Crying, sobbing",0.6244,True,True,True
+3-152007-A-20.wav,crying_baby,crying_baby,0.4251,"Crying, sobbing",0.4251,True,True,True
+3-152007-B-20.wav,crying_baby,crying_baby,0.8349,"Crying, sobbing",0.8349,True,True,True
+3-152007-C-20.wav,crying_baby,crying_baby,0.5231,"Crying, sobbing",0.5231,True,True,True
+3-152007-D-20.wav,crying_baby,crying_baby,0.6492,"Crying, sobbing",0.6492,True,True,True
+3-152007-E-20.wav,crying_baby,crying_baby,0.6958,"Crying, sobbing",0.6958,True,True,True
+3-154926-A-40.wav,helicopter,helicopter,0.0076,Vehicle,0.4074,False,False,True
+3-154926-B-40.wav,helicopter,helicopter,0.1864,Vehicle,0.7967,False,False,True
+3-154957-A-1.wav,rooster,rooster,0.5852,Animal,0.6029,False,True,True
+3-155312-A-0.wav,dog,dog,0.8781,Animal,0.8987,False,True,True
+3-155642-A-11.wav,sea_waves,sea_waves,0.7795,Ocean,0.7795,True,True,True
+3-155642-B-11.wav,sea_waves,sea_waves,0.6705,Water,0.7522,False,True,True
+3-156558-A-21.wav,sneezing,sneezing,0.0791,Silence,0.6023,False,True,True
+3-157149-A-10.wav,rain,rain,0.0028,Water,0.872,False,False,True
+3-157187-A-12.wav,crackling_fire,crackling_fire,0.0479,Silence,0.5288,False,True,True
+3-157487-A-10.wav,rain,rain,0.5924,Rain,0.5924,True,True,True
+3-157615-A-10.wav,rain,rain,0.3283,Waterfall,0.8717,False,True,True
+3-157695-A-0.wav,dog,dog,0.4863,Animal,0.5894,False,True,True
+3-158476-A-12.wav,crackling_fire,crackling_fire,0.078,Animal,0.1688,False,False,True
+3-163288-A-1.wav,rooster,rooster,0.4312,Animal,0.4773,False,True,True
+3-163459-A-0.wav,dog,dog,0.2049,Silence,0.6908,False,True,True
+3-164120-A-11.wav,sea_waves,sea_waves,0.2388,Vehicle,0.4749,False,True,True
+3-164630-A-11.wav,sea_waves,sea_waves,0.0447,Stream,0.5188,False,False,True
+3-164688-A-38.wav,clock_tick,clock_tick,0.6142,Clock,0.6142,True,True,True
+3-165856-A-41.wav,chainsaw,chainsaw,0.2824,Chainsaw,0.2824,True,True,True
+3-166422-A-11.wav,sea_waves,sea_waves,0.5775,Water,0.7297,False,True,True
+3-170015-A-0.wav,dog,dog,0.2259,Silence,0.5922,False,True,True
+3-170377-A-38.wav,clock_tick,clock_tick,0.6391,Clock,0.6391,True,True,True
+3-170383-A-38.wav,clock_tick,clock_tick,0.7116,Clock,0.7116,True,True,True
+3-171012-A-38.wav,clock_tick,clock_tick,0.0594,"Inside, small room",0.2177,False,True,True
+3-171041-A-38.wav,clock_tick,clock_tick,0.5738,Clock,0.5738,True,True,True
+3-180256-A-0.wav,dog,dog,0.3934,Animal,0.4769,False,True,True
+3-180977-A-0.wav,dog,dog,0.9633,Animal,0.9787,False,True,True
+3-187710-A-11.wav,sea_waves,sea_waves,0.2286,Silence,0.4066,False,True,True
+3-65748-A-12.wav,crackling_fire,crackling_fire,0.0425,Vehicle,0.5298,False,False,True
+3-68630-A-40.wav,helicopter,helicopter,0.3273,Vehicle,0.793,False,True,True
+3-68630-B-40.wav,helicopter,helicopter,0.2328,Vehicle,0.6189,False,True,True
+3-68630-C-40.wav,helicopter,helicopter,0.0665,Vehicle,0.769,False,False,True
+4-125929-A-40.wav,helicopter,helicopter,0.0524,Vehicle,0.4926,False,False,True
+4-149294-A-41.wav,chainsaw,chainsaw,0.0278,Vehicle,0.4126,False,False,True
+4-149294-B-41.wav,chainsaw,helicopter,0.0053,Chant,0.1506,False,False,False
+4-156843-A-21.wav,sneezing,sneezing,0.0595,Silence,0.8,False,True,True
+4-156844-A-21.wav,sneezing,sneezing,0.6519,Sneeze,0.6519,True,True,True
+4-157297-A-21.wav,sneezing,sneezing,0.184,Speech,0.2929,False,True,True
+4-157611-A-41.wav,chainsaw,chainsaw,0.003,Vehicle,0.7322,False,False,True
+4-157611-B-41.wav,chainsaw,chainsaw,0.0125,Vehicle,0.5204,False,False,True
+4-160999-A-10.wav,rain,rain,0.1591,Vehicle,0.2911,False,True,True
+4-161127-A-10.wav,rain,rain,0.2504,Water,0.6423,False,True,True
+4-161579-A-40.wav,helicopter,helicopter,0.0038,Silence,0.5029,False,False,True
+4-161579-B-40.wav,helicopter,helicopter,0.2187,Vehicle,0.8924,False,True,True
+4-163264-A-10.wav,rain,rain,0.2367,Water,0.8164,False,True,True
+4-164021-A-1.wav,rooster,rooster,0.7264,Animal,0.7908,False,True,True
+4-164064-A-1.wav,rooster,rooster,0.3785,Silence,0.5027,False,True,True
+4-164064-B-1.wav,rooster,rooster,0.3812,Silence,0.6,False,True,True
+4-164064-C-1.wav,rooster,rooster,0.464,Silence,0.5,False,True,True
+4-164206-A-10.wav,rain,rain,0.4249,Water,0.6912,False,True,True
+4-164661-A-12.wav,crackling_fire,crackling_fire,0.0815,Vehicle,0.2544,False,True,True
+4-164661-B-12.wav,crackling_fire,crackling_fire,0.0612,"Rodents, rats, mice",0.2693,False,False,True
+4-164859-A-1.wav,rooster,rooster,0.3251,Animal,0.5393,False,True,True
+4-165823-A-41.wav,chainsaw,chainsaw,0.7902,Chainsaw,0.7902,True,True,True
+4-165823-B-41.wav,chainsaw,chainsaw,0.8719,Chainsaw,0.8719,True,True,True
+4-166661-A-10.wav,rain,rain,0.3613,Water,0.7442,False,True,True
+4-167063-A-11.wav,sea_waves,sea_waves,0.468,Water,0.7077,False,True,True
+4-167063-B-11.wav,sea_waves,sea_waves,0.7641,Water,0.787,False,True,True
+4-167063-C-11.wav,sea_waves,sea_waves,0.7995,Water,0.8395,False,True,True
+4-167077-A-20.wav,crying_baby,crying_baby,0.5676,"Crying, sobbing",0.5676,True,True,True
+4-167077-B-20.wav,crying_baby,crying_baby,0.7479,"Crying, sobbing",0.7479,True,True,True
+4-167077-C-20.wav,crying_baby,crying_baby,0.7953,"Crying, sobbing",0.7953,True,True,True
+4-167642-A-21.wav,sneezing,sneezing,0.1335,Silence,0.8003,False,True,True
+4-169127-A-41.wav,chainsaw,chainsaw,0.4495,Light engine (high frequency),0.45,False,True,True
+4-169127-B-41.wav,chainsaw,chainsaw,0.8829,Chainsaw,0.8829,True,True,True
+4-170078-A-1.wav,rooster,rooster,0.311,Silence,0.5771,False,True,True
+4-170247-A-12.wav,crackling_fire,crackling_fire,0.2232,Crunch,0.2944,False,True,True
+4-170247-B-12.wav,crackling_fire,crackling_fire,0.3633,Fire,0.3633,True,True,True
+4-171207-A-12.wav,crackling_fire,crackling_fire,0.0293,Vehicle,0.5059,False,False,True
+4-171519-A-21.wav,sneezing,sneezing,0.0277,Silence,0.6264,False,True,True
+4-175000-A-40.wav,helicopter,helicopter,0.2799,Vehicle,0.4753,False,True,True
+4-175000-B-40.wav,helicopter,helicopter,0.0492,Vehicle,0.4949,False,False,True
+4-175000-C-40.wav,helicopter,helicopter,0.0225,Vehicle,0.5149,False,False,True
+4-175945-A-38.wav,clock_tick,rooster,0.317,Animal,0.4676,False,False,False
+4-177250-A-10.wav,rain,rain,0.2872,Water,0.6757,False,True,True
+4-179984-A-38.wav,clock_tick,clock_tick,0.061,Music,0.1933,False,True,True
+4-180380-A-10.wav,rain,rain,0.6355,Water,0.73,False,True,True
+4-181035-A-38.wav,clock_tick,clock_tick,0.1591,Mechanisms,0.1613,False,True,True
+4-181286-A-10.wav,rain,rain,0.9239,Rain,0.9239,True,True,True
+4-181563-A-12.wav,crackling_fire,rain,0.4897,Rain,0.4897,False,True,False
+4-181865-A-38.wav,clock_tick,clock_tick,0.1129,"Inside, small room",0.2631,False,True,True
+4-182368-A-12.wav,crackling_fire,crackling_fire,0.1984,Fire,0.1984,True,True,True
+4-182369-A-12.wav,crackling_fire,rain,0.5384,Rain,0.5384,False,True,False
+4-182395-A-0.wav,dog,dog,0.1918,Silence,0.7,False,True,True
+4-182613-A-11.wav,sea_waves,sea_waves,0.938,Ocean,0.938,True,True,True
+4-182613-B-11.wav,sea_waves,sea_waves,0.9129,Ocean,0.9129,True,True,True
+4-183487-A-1.wav,rooster,rooster,0.3821,Silence,0.5,False,True,True
+4-183992-A-0.wav,dog,dog,0.5703,"Domestic animals, pets",0.5725,False,True,True
+4-184434-A-21.wav,sneezing,sneezing,0.0685,Silence,0.6081,False,True,True
+4-184575-A-0.wav,dog,dog,0.8783,Animal,0.9418,False,True,True
+4-185415-A-21.wav,sneezing,sneezing,0.0058,Silence,0.9,False,False,True
+4-185575-A-20.wav,crying_baby,crying_baby,0.4709,"Crying, sobbing",0.4709,True,True,True
+4-185575-B-20.wav,crying_baby,crying_baby,0.3302,"Crying, sobbing",0.3302,True,True,True
+4-185575-C-20.wav,crying_baby,crying_baby,0.4129,"Crying, sobbing",0.4129,True,True,True
+4-185619-A-21.wav,sneezing,sneezing,0.0835,Silence,0.5005,False,True,True
+4-188033-A-38.wav,clock_tick,clock_tick,0.0885,Silence,0.3622,False,True,True
+4-191327-A-38.wav,clock_tick,clock_tick,0.0072,Speech,0.4539,False,False,True
+4-191687-A-0.wav,dog,dog,0.9528,Animal,0.9738,False,True,True
+4-192236-A-0.wav,dog,dog,0.8446,"Domestic animals, pets",0.8606,False,True,True
+4-193480-A-40.wav,helicopter,helicopter,0.1715,Vehicle,0.6513,False,True,True
+4-193480-B-40.wav,helicopter,helicopter,0.0781,Vehicle,0.7652,False,True,True
+4-194711-A-38.wav,clock_tick,clock_tick,0.2127,Alarm clock,0.2843,False,True,True
+4-194754-A-0.wav,dog,dog,0.7765,Animal,0.8306,False,True,True
+4-195497-A-11.wav,sea_waves,sea_waves,0.6051,Ocean,0.6051,True,True,True
+4-195497-B-11.wav,sea_waves,sea_waves,0.7032,Ocean,0.7032,True,True,True
+4-198965-A-38.wav,clock_tick,clock_tick,0.0706,Music,0.1469,False,True,True
+4-199261-A-0.wav,dog,dog,0.6682,Animal,0.6914,False,True,True
+4-204618-A-11.wav,sea_waves,sea_waves,0.2895,Water,0.4846,False,True,True
+4-207124-A-0.wav,dog,dog,0.9002,Animal,0.9399,False,True,True
+4-208021-A-1.wav,rooster,rooster,0.1968,Silence,0.5,False,True,True
+4-59579-A-20.wav,crying_baby,crying_baby,0.6152,"Crying, sobbing",0.6152,True,True,True
+4-59579-B-20.wav,crying_baby,crying_baby,0.3091,Silence,0.5,False,True,True
+5-151085-A-20.wav,crying_baby,crying_baby,0.9108,"Crying, sobbing",0.9108,True,True,True
+5-170338-A-41.wav,chainsaw,crackling_fire,0.0026,Vehicle,0.6514,False,False,False
+5-170338-B-41.wav,chainsaw,chainsaw,0.0076,Vehicle,0.4671,False,False,True
+5-171653-A-41.wav,chainsaw,chainsaw,0.7535,Chainsaw,0.7535,True,True,True
+5-177957-A-40.wav,helicopter,helicopter,0.0036,Vehicle,0.7056,False,False,True
+5-177957-B-40.wav,helicopter,helicopter,0.0218,Vehicle,0.6246,False,False,True
+5-177957-C-40.wav,helicopter,helicopter,0.4436,Vehicle,0.8156,False,True,True
+5-177957-D-40.wav,helicopter,helicopter,0.0236,Vehicle,0.6894,False,False,True
+5-177957-E-40.wav,helicopter,crackling_fire,0.0008,Vehicle,0.8629,False,False,False
+5-181766-A-10.wav,rain,rain,0.4496,Water,0.4598,False,True,True
+5-185579-A-41.wav,chainsaw,chainsaw,0.5207,Chainsaw,0.5207,True,True,True
+5-185579-B-41.wav,chainsaw,chainsaw,0.6021,Chainsaw,0.6021,True,True,True
+5-186924-A-12.wav,crackling_fire,rain,0.149,Vehicle,0.3344,False,True,False
+5-187979-A-21.wav,sneezing,sneezing,0.0734,Silence,0.7,False,True,True
+5-188655-A-10.wav,rain,rain,0.9282,Rain,0.9282,True,True,True
+5-189212-A-12.wav,crackling_fire,crackling_fire,0.1954,Patter,0.2129,False,True,True
+5-189237-A-12.wav,crackling_fire,crackling_fire,0.0147,"Inside, small room",0.3131,False,False,True
+5-191131-A-40.wav,helicopter,helicopter,0.0221,Vehicle,0.6503,False,False,True
+5-193339-A-10.wav,rain,rain,0.847,Water,0.8566,False,True,True
+5-193473-A-12.wav,crackling_fire,crackling_fire,0.1155,"Crumpling, crinkling",0.5294,False,False,True
+5-193473-B-12.wav,crackling_fire,crackling_fire,0.0405,Tearing,0.6185,False,False,True
+5-194533-A-21.wav,sneezing,sneezing,0.2534,Silence,0.4001,False,True,True
+5-194892-A-10.wav,rain,rain,0.4325,Rain,0.4325,True,True,True
+5-194930-A-1.wav,rooster,rooster,0.3721,Animal,0.5475,False,True,True
+5-194930-B-1.wav,rooster,rooster,0.2005,Animal,0.4206,False,True,True
+5-195710-A-10.wav,rain,rain,0.2405,Water,0.4267,False,True,True
+5-198321-A-10.wav,rain,rain,0.1543,Water,0.7941,False,True,True
+5-198411-A-20.wav,crying_baby,crying_baby,0.6783,"Crying, sobbing",0.6783,True,True,True
+5-198411-B-20.wav,crying_baby,crying_baby,0.1557,Laughter,0.3792,False,False,True
+5-198411-C-20.wav,crying_baby,crying_baby,0.2358,"Crying, sobbing",0.2358,True,True,True
+5-198411-D-20.wav,crying_baby,crying_baby,0.3707,"Crying, sobbing",0.3707,True,True,True
+5-198411-E-20.wav,crying_baby,crying_baby,0.6475,"Crying, sobbing",0.6475,True,True,True
+5-198411-F-20.wav,crying_baby,crying_baby,0.3042,"Crying, sobbing",0.3042,True,True,True
+5-198411-G-20.wav,crying_baby,crying_baby,0.1496,Laughter,0.2295,False,True,True
+5-200334-A-1.wav,rooster,rooster,0.5838,Animal,0.6005,False,True,True
+5-200334-B-1.wav,rooster,rooster,0.4818,Animal,0.5036,False,True,True
+5-200339-A-1.wav,rooster,rooster,0.512,Animal,0.5779,False,True,True
+5-200461-A-11.wav,sea_waves,sea_waves,0.359,Ocean,0.359,True,True,True
+5-200461-B-11.wav,sea_waves,sea_waves,0.4226,Water,0.5888,False,True,True
+5-201194-A-38.wav,clock_tick,clock_tick,0.6709,Clock,0.6709,True,True,True
+5-201274-A-21.wav,sneezing,sneezing,0.0666,Silence,0.579,False,True,True
+5-202220-A-21.wav,sneezing,sneezing,0.1713,Sneeze,0.1713,True,True,True
+5-202898-A-10.wav,rain,rain,0.1393,Water,0.6346,False,False,True
+5-203128-A-0.wav,dog,dog,0.9325,Animal,0.9524,False,True,True
+5-203128-B-0.wav,dog,dog,0.9281,Animal,0.985,False,True,True
+5-203739-A-10.wav,rain,rain,0.2488,Water,0.4959,False,True,True
+5-205898-A-40.wav,helicopter,helicopter,0.3496,Vehicle,0.7781,False,True,True
+5-208030-A-0.wav,dog,dog,0.9547,"Domestic animals, pets",0.9672,False,True,True
+5-208624-A-38.wav,clock_tick,clock_tick,0.1116,Animal,0.2437,False,True,True
+5-208810-A-11.wav,sea_waves,sea_waves,0.6774,Water,0.8524,False,True,True
+5-208810-B-11.wav,sea_waves,sea_waves,0.5374,Water,0.8224,False,True,True
+5-209698-A-38.wav,clock_tick,clock_tick,0.2006,Clock,0.2006,True,True,True
+5-209833-A-38.wav,clock_tick,clock_tick,0.2263,Alarm clock,0.2896,False,True,True
+5-210571-A-38.wav,clock_tick,clock_tick,0.0986,Silence,0.2663,False,True,True
+5-212181-A-38.wav,clock_tick,clock_tick,0.1713,Mechanisms,0.2225,False,True,True
+5-212454-A-0.wav,dog,dog,0.9223,Animal,0.9497,False,True,True
+5-213077-A-11.wav,sea_waves,sea_waves,0.704,Ocean,0.704,True,True,True
+5-213802-A-12.wav,crackling_fire,helicopter,0.1797,Vehicle,0.5145,False,False,False
+5-213855-A-0.wav,dog,dog,0.8633,Animal,0.9292,False,True,True
+5-215658-A-12.wav,crackling_fire,crackling_fire,0.1164,Bicycle,0.247,False,True,True
+5-215658-B-12.wav,crackling_fire,rain,0.4194,Rain,0.4194,False,False,False
+5-216370-A-41.wav,chainsaw,chainsaw,0.72,Chainsaw,0.72,True,True,True
+5-216370-B-41.wav,chainsaw,chainsaw,0.3624,Chainsaw,0.3624,True,True,True
+5-217158-A-0.wav,dog,dog,0.4054,Animal,0.4634,False,True,True
+5-219342-A-38.wav,clock_tick,clock_tick,0.0735,Sound effect,0.0882,False,True,True
+5-219379-A-11.wav,sea_waves,sea_waves,0.7105,Water,0.7829,False,True,True
+5-219379-B-11.wav,sea_waves,sea_waves,0.4481,Water,0.7853,False,True,True
+5-219379-C-11.wav,sea_waves,sea_waves,0.4969,Water,0.6725,False,True,True
+5-220026-A-21.wav,sneezing,sneezing,0.0644,Silence,0.7002,False,True,True
+5-220027-A-21.wav,sneezing,sneezing,0.0769,Silence,0.7002,False,True,True
+5-220955-A-40.wav,helicopter,crackling_fire,0.0017,Vehicle,0.1785,False,False,False
+5-221518-A-21.wav,sneezing,sneezing,0.4667,Sneeze,0.4667,True,True,True
+5-221593-A-21.wav,sneezing,crying_baby,0.0032,Silence,0.8,False,False,False
+5-222524-A-41.wav,chainsaw,helicopter,0.0014,Vehicle,0.623,False,False,False
+5-231762-A-0.wav,dog,dog,0.2894,Silence,0.7,False,True,True
+5-233160-A-1.wav,rooster,rooster,0.3872,Silence,0.4541,False,True,True
+5-234879-A-1.wav,rooster,rooster,0.3693,Silence,0.5003,False,True,True
+5-234879-B-1.wav,rooster,rooster,0.3931,Animal,0.4478,False,True,True
+5-235671-A-38.wav,clock_tick,clock_tick,0.1116,"Inside, small room",0.2159,False,True,True
+5-9032-A-0.wav,dog,dog,0.3458,Animal,0.406,False,True,True
