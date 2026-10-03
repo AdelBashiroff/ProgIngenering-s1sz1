@@ -1,0 +1,121 @@
+{
+  "input": "videos/my_video.mov",
+  "output": "/Users/adelbashiroff/Documents/P_ingenering/ProgIngenering-s1sz1/video/results/my_video_detected.mp4",
+  "model": "yolo11n.pt",
+  "device": "mps",
+  "conf_threshold": 0.25,
+  "imgsz": 640,
+  "frames": 1766,
+  "resolution": [
+    3840,
+    2160
+  ],
+  "video_fps": 59.91,
+  "duration_s": 29.48,
+  "processing_fps": 13.0,
+  "realtime_factor": 0.22,
+  "inference_ms_per_frame": 21.5,
+  "detections_total": 48207,
+  "classes": {
+    "person": {
+      "detections": 24204,
+      "frames_with_class": 1766,
+      "max_simultaneous": 27
+    },
+    "car": {
+      "detections": 23576,
+      "frames_with_class": 1766,
+      "max_simultaneous": 24
+    },
+    "truck": {
+      "detections": 214,
+      "frames_with_class": 181,
+      "max_simultaneous": 3
+    },
+    "motorcycle": {
+      "detections": 50,
+      "frames_with_class": 38,
+      "max_simultaneous": 3
+    },
+    "skateboard": {
+      "detections": 47,
+      "frames_with_class": 43,
+      "max_simultaneous": 2
+    },
+    "backpack": {
+      "detections": 32,
+      "frames_with_class": 29,
+      "max_simultaneous": 3
+    },
+    "dog": {
+      "detections": 20,
+      "frames_with_class": 20,
+      "max_simultaneous": 1
+    },
+    "stop sign": {
+      "detections": 19,
+      "frames_with_class": 19,
+      "max_simultaneous": 1
+    },
+    "umbrella": {
+      "detections": 12,
+      "frames_with_class": 12,
+      "max_simultaneous": 1
+    },
+    "suitcase": {
+      "detections": 8,
+      "frames_with_class": 7,
+      "max_simultaneous": 2
+    },
+    "handbag": {
+      "detections": 8,
+      "frames_with_class": 8,
+      "max_simultaneous": 1
+    },
+    "frisbee": {
+      "detections": 4,
+      "frames_with_class": 4,
+      "max_simultaneous": 1
+    },
+    "bottle": {
+      "detections": 3,
+      "frames_with_class": 3,
+      "max_simultaneous": 1
+    },
+    "fire hydrant": {
+      "detections": 3,
+      "frames_with_class": 3,
+      "max_simultaneous": 1
+    },
+    "boat": {
+      "detections": 2,
+      "frames_with_class": 2,
+      "max_simultaneous": 1
+    },
+    "bus": {
+      "detections": 1,
+      "frames_with_class": 1,
+      "max_simultaneous": 1
+    },
+    "sports ball": {
+      "detections": 1,
+      "frames_with_class": 1,
+      "max_simultaneous": 1
+    },
+    "bird": {
+      "detections": 1,
+      "frames_with_class": 1,
+      "max_simultaneous": 1
+    },
+    "chair": {
+      "detections": 1,
+      "frames_with_class": 1,
+      "max_simultaneous": 1
+    },
+    "bicycle": {
+      "detections": 1,
+      "frames_with_class": 1,
+      "max_simultaneous": 1
+    }
+  }
+}

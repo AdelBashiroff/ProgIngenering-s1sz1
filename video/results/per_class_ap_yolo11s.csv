@@ -1,0 +1,81 @@
+class,AP,n_objects
+toaster,0.9,1
+bear,0.8663,3
+refrigerator,0.8418,13
+giraffe,0.8344,16
+laptop,0.821,16
+fire hydrant,0.8153,7
+scissors,0.7677,2
+airplane,0.7435,29
+dog,0.7332,19
+train,0.7304,13
+zebra,0.7186,27
+parking meter,0.7014,11
+motorcycle,0.6874,23
+hot dog,0.6843,10
+horse,0.6834,29
+cow,0.6784,43
+bus,0.6742,23
+elephant,0.672,25
+toilet,0.6664,23
+baseball bat,0.6653,7
+tv,0.6583,24
+cat,0.655,24
+kite,0.6321,41
+pizza,0.6168,21
+person,0.6138,1186
+keyboard,0.6114,18
+mouse,0.5857,13
+teddy bear,0.5548,15
+oven,0.5483,12
+skateboard,0.5461,30
+bird,0.5413,21
+baseball glove,0.5411,7
+tennis racket,0.5291,23
+car,0.517,214
+cake,0.5069,53
+cup,0.4902,124
+clock,0.4871,33
+banana,0.4542,24
+sports ball,0.4517,15
+microwave,0.4488,5
+sheep,0.4483,24
+cell phone,0.4275,31
+stop sign,0.4181,5
+suitcase,0.413,20
+snowboard,0.4059,9
+bowl,0.4025,77
+broccoli,0.4019,24
+dining table,0.4005,78
+frisbee,0.3956,14
+umbrella,0.3847,38
+bicycle,0.3847,47
+bottle,0.3734,124
+sandwich,0.3695,27
+chair,0.3572,161
+couch,0.3496,11
+potted plant,0.3468,27
+apple,0.345,38
+surfboard,0.3226,28
+orange,0.3166,16
+vase,0.3082,28
+truck,0.3027,55
+wine glass,0.3023,32
+sink,0.2958,19
+bench,0.2854,42
+traffic light,0.2797,76
+fork,0.2753,30
+skis,0.2702,34
+boat,0.2689,48
+remote,0.2635,22
+carrot,0.2518,32
+spoon,0.2482,40
+toothbrush,0.2368,2
+handbag,0.2317,60
+tie,0.23,44
+book,0.23,88
+donut,0.2256,36
+knife,0.2143,39
+backpack,0.2021,54
+bed,0.1917,19
+hair drier,,0

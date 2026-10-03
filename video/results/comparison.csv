@@ -1,0 +1,3 @@
+model,AP,AP50,AP75,ms_per_image,parameters_millions
+yolo11n.pt,0.415,0.5707,0.4528,35.1,2.62
+yolo11s.pt,0.4842,0.6527,0.5282,47.2,9.46

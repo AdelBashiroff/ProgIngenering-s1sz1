@@ -1,0 +1,21 @@
+{
+  "model": "yolo11n.pt",
+  "device": "mps",
+  "n_images": 500,
+  "imgsz": 640,
+  "AP": 0.415,
+  "AP50": 0.5707,
+  "AP75": 0.4528,
+  "AP_small": 0.2256,
+  "AP_medium": 0.4197,
+  "AP_large": 0.6102,
+  "AR_1": 0.3284,
+  "AR_10": 0.5251,
+  "AR_100": 0.5701,
+  "AR_small": 0.3367,
+  "AR_medium": 0.5915,
+  "AR_large": 0.7399,
+  "ms_per_image": 35.1,
+  "images_per_second": 28.49,
+  "parameters_millions": 2.62
+}
