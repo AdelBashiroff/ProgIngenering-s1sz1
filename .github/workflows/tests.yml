@@ -1,0 +1,17 @@
+name: Python tests
+on: [push, pull_request, workflow_dispatch]
+permissions:
+  contents: read
+jobs:
+  tests:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.11'
+          cache: pip
+      - name: Install test dependencies
+        run: pip install fastapi python-multipart httpx pytest pillow numpy pandas scikit-learn
+      - name: Run tests without downloading neural model weights
+        run: python -m pytest -q

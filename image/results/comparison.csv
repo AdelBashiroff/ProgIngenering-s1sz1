@@ -1,0 +1,7 @@
+config,model,fit,prompts,accuracy,macro_f1,ms_per_image
+clip-vit-base-patch32__pad__ensemble,clip-vit-base-patch32,pad,ensemble,0.8667,0.8667,19.9
+clip-vit-base-patch32__crop__descriptive,clip-vit-base-patch32,crop,descriptive,0.8444,0.85,26.3
+clip-vit-base-patch32__pad__descriptive,clip-vit-base-patch32,pad,descriptive,0.8444,0.8436,19.9
+clip-vit-base-patch32__crop__ensemble,clip-vit-base-patch32,crop,ensemble,0.8444,0.843,26.3
+clip-vit-base-patch32__crop__simple,clip-vit-base-patch32,crop,simple,0.7778,0.7778,26.3
+clip-vit-base-patch32__pad__simple,clip-vit-base-patch32,pad,simple,0.7556,0.7525,19.9

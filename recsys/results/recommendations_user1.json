@@ -1,0 +1,212 @@
+{
+  "popular": [
+    {
+      "item_id": 100,
+      "title": "Fargo (1996)"
+    },
+    {
+      "item_id": 258,
+      "title": "Contact (1997)"
+    },
+    {
+      "item_id": 286,
+      "title": "English Patient, The (1996)"
+    },
+    {
+      "item_id": 300,
+      "title": "Air Force One (1997)"
+    },
+    {
+      "item_id": 318,
+      "title": "Schindler's List (1993)"
+    },
+    {
+      "item_id": 288,
+      "title": "Scream (1996)"
+    },
+    {
+      "item_id": 313,
+      "title": "Titanic (1997)"
+    },
+    {
+      "item_id": 357,
+      "title": "One Flew Over the Cuckoo's Nest (1975)"
+    },
+    {
+      "item_id": 302,
+      "title": "L.A. Confidential (1997)"
+    },
+    {
+      "item_id": 12,
+      "title": "Usual Suspects, The (1995)"
+    }
+  ],
+  "bayesian": [
+    {
+      "item_id": 483,
+      "title": "Casablanca (1942)"
+    },
+    {
+      "item_id": 318,
+      "title": "Schindler's List (1993)"
+    },
+    {
+      "item_id": 169,
+      "title": "Wrong Trousers, The (1993)"
+    },
+    {
+      "item_id": 408,
+      "title": "Close Shave, A (1995)"
+    },
+    {
+      "item_id": 12,
+      "title": "Usual Suspects, The (1995)"
+    },
+    {
+      "item_id": 603,
+      "title": "Rear Window (1954)"
+    },
+    {
+      "item_id": 357,
+      "title": "One Flew Over the Cuckoo's Nest (1975)"
+    },
+    {
+      "item_id": 427,
+      "title": "To Kill a Mockingbird (1962)"
+    },
+    {
+      "item_id": 285,
+      "title": "Secrets & Lies (1996)"
+    },
+    {
+      "item_id": 511,
+      "title": "Lawrence of Arabia (1962)"
+    }
+  ],
+  "content": [
+    {
+      "item_id": 74,
+      "title": "Faster Pussycat! Kill! Kill! (1965)"
+    },
+    {
+      "item_id": 523,
+      "title": "Cool Hand Luke (1967)"
+    },
+    {
+      "item_id": 316,
+      "title": "As Good As It Gets (1997)"
+    },
+    {
+      "item_id": 382,
+      "title": "Adventures of Priscilla, Queen of the Desert, The (1994)"
+    },
+    {
+      "item_id": 652,
+      "title": "Rosencrantz and Guildenstern Are Dead (1990)"
+    },
+    {
+      "item_id": 347,
+      "title": "Wag the Dog (1997)"
+    },
+    {
+      "item_id": 1012,
+      "title": "Private Parts (1997)"
+    },
+    {
+      "item_id": 481,
+      "title": "Apartment, The (1960)"
+    },
+    {
+      "item_id": 715,
+      "title": "To Die For (1995)"
+    },
+    {
+      "item_id": 345,
+      "title": "Deconstructing Harry (1997)"
+    }
+  ],
+  "item_cf": [
+    {
+      "item_id": 12,
+      "title": "Usual Suspects, The (1995)"
+    },
+    {
+      "item_id": 357,
+      "title": "One Flew Over the Cuckoo's Nest (1975)"
+    },
+    {
+      "item_id": 483,
+      "title": "Casablanca (1942)"
+    },
+    {
+      "item_id": 318,
+      "title": "Schindler's List (1993)"
+    },
+    {
+      "item_id": 100,
+      "title": "Fargo (1996)"
+    },
+    {
+      "item_id": 423,
+      "title": "E.T. the Extra-Terrestrial (1982)"
+    },
+    {
+      "item_id": 474,
+      "title": "Dr. Strangelove or: How I Learned to Stop Worrying and Love the Bomb (1963)"
+    },
+    {
+      "item_id": 208,
+      "title": "Young Frankenstein (1974)"
+    },
+    {
+      "item_id": 228,
+      "title": "Star Trek: The Wrath of Khan (1982)"
+    },
+    {
+      "item_id": 568,
+      "title": "Speed (1994)"
+    }
+  ],
+  "hybrid": [
+    {
+      "item_id": 357,
+      "title": "One Flew Over the Cuckoo's Nest (1975)"
+    },
+    {
+      "item_id": 483,
+      "title": "Casablanca (1942)"
+    },
+    {
+      "item_id": 496,
+      "title": "It's a Wonderful Life (1946)"
+    },
+    {
+      "item_id": 318,
+      "title": "Schindler's List (1993)"
+    },
+    {
+      "item_id": 427,
+      "title": "To Kill a Mockingbird (1962)"
+    },
+    {
+      "item_id": 523,
+      "title": "Cool Hand Luke (1967)"
+    },
+    {
+      "item_id": 100,
+      "title": "Fargo (1996)"
+    },
+    {
+      "item_id": 475,
+      "title": "Trainspotting (1996)"
+    },
+    {
+      "item_id": 1012,
+      "title": "Private Parts (1997)"
+    },
+    {
+      "item_id": 1241,
+      "title": "Van, The (1996)"
+    }
+  ]
+}

@@ -1,0 +1,19 @@
+{
+  "health": {
+    "status": "ok",
+    "service": "website-classifier"
+  },
+  "status_code": 200,
+  "image": "image/data/images/shop/2ec30ac0f31ed5df.jpg",
+  "elapsed_s": 4.713,
+  "prediction": {
+    "label": "shop",
+    "score": 0.9856,
+    "probabilities": {
+      "landing": 0.0083,
+      "shop": 0.9856,
+      "blog": 0.0061
+    },
+    "model": "openai/clip-vit-base-patch32"
+  }
+}

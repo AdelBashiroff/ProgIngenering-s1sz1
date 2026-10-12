@@ -1,0 +1,19 @@
+{
+  "ratings": 100000,
+  "users": 943,
+  "items": 1682,
+  "train_ratings": 78595,
+  "test_ratings": 21405,
+  "eligible_users": 915,
+  "warm_eligible_users": 914,
+  "users_without_test_positives": 28,
+  "cold_test_items": 71,
+  "test_positive_pairs_cold_items": 17,
+  "split": "per-user temporal 80/20, timestamp ties remain together",
+  "positive_rating": 4,
+  "k": 10,
+  "item_cf_neighbors": 40,
+  "hybrid_alpha": 0.5,
+  "candidate_set": "all 1682 catalog items minus all train-seen items",
+  "fit_seconds": 0.103
+}

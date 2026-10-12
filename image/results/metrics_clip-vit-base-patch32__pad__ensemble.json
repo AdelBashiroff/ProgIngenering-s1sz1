@@ -1,0 +1,132 @@
+{
+  "config": "clip-vit-base-patch32__pad__ensemble",
+  "n_samples": 45,
+  "class_counts": {
+    "landing": 18,
+    "blog": 18,
+    "shop": 9
+  },
+  "accuracy": 0.8667,
+  "macro_f1": 0.8667,
+  "accuracy_ci95": [
+    0.7556,
+    0.9556
+  ],
+  "macro_f1_ci95": [
+    0.7452,
+    0.9552
+  ],
+  "per_class": {
+    "landing": {
+      "precision": 0.8181818181818182,
+      "recall": 1.0,
+      "f1-score": 0.9,
+      "support": 18.0
+    },
+    "shop": {
+      "precision": 0.8181818181818182,
+      "recall": 1.0,
+      "f1-score": 0.9,
+      "support": 9.0
+    },
+    "blog": {
+      "precision": 1.0,
+      "recall": 0.6666666666666666,
+      "f1-score": 0.8,
+      "support": 18.0
+    },
+    "accuracy": 0.8666666666666667,
+    "macro avg": {
+      "precision": 0.8787878787878789,
+      "recall": 0.8888888888888888,
+      "f1-score": 0.8666666666666667,
+      "support": 45.0
+    },
+    "weighted avg": {
+      "precision": 0.890909090909091,
+      "recall": 0.8666666666666667,
+      "f1-score": 0.8599999999999999,
+      "support": 45.0
+    }
+  },
+  "confusion_matrix": {
+    "labels": [
+      "landing",
+      "shop",
+      "blog"
+    ],
+    "matrix": [
+      [
+        18,
+        0,
+        0
+      ],
+      [
+        0,
+        9,
+        0
+      ],
+      [
+        4,
+        2,
+        12
+      ]
+    ]
+  },
+  "confidence_threshold_analysis": [
+    {
+      "threshold": 0.0,
+      "coverage": 1.0,
+      "accuracy": 0.8667
+    },
+    {
+      "threshold": 0.5,
+      "coverage": 0.9556,
+      "accuracy": 0.8837
+    },
+    {
+      "threshold": 0.6,
+      "coverage": 0.8,
+      "accuracy": 0.9167
+    },
+    {
+      "threshold": 0.7,
+      "coverage": 0.7111,
+      "accuracy": 0.9375
+    },
+    {
+      "threshold": 0.8,
+      "coverage": 0.5778,
+      "accuracy": 0.9615
+    },
+    {
+      "threshold": 0.9,
+      "coverage": 0.3556,
+      "accuracy": 0.9375
+    }
+  ],
+  "by_source": [
+    {
+      "source": "demo-store",
+      "n": 1,
+      "accuracy": 1.0
+    },
+    {
+      "source": "direct",
+      "n": 44,
+      "accuracy": 0.8636
+    }
+  ],
+  "by_lang": [
+    {
+      "lang": "en",
+      "n": 44,
+      "accuracy": 0.8636
+    },
+    {
+      "lang": "ru",
+      "n": 1,
+      "accuracy": 1.0
+    }
+  ]
+}

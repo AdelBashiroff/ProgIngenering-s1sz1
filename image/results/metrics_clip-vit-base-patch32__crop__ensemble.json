@@ -1,0 +1,132 @@
+{
+  "config": "clip-vit-base-patch32__crop__ensemble",
+  "n_samples": 45,
+  "class_counts": {
+    "landing": 18,
+    "blog": 18,
+    "shop": 9
+  },
+  "accuracy": 0.8444,
+  "macro_f1": 0.843,
+  "accuracy_ci95": [
+    0.7333,
+    0.9333
+  ],
+  "macro_f1_ci95": [
+    0.7132,
+    0.9359
+  ],
+  "per_class": {
+    "landing": {
+      "precision": 0.8095238095238095,
+      "recall": 0.9444444444444444,
+      "f1-score": 0.8717948717948718,
+      "support": 18.0
+    },
+    "shop": {
+      "precision": 0.75,
+      "recall": 1.0,
+      "f1-score": 0.8571428571428571,
+      "support": 9.0
+    },
+    "blog": {
+      "precision": 1.0,
+      "recall": 0.6666666666666666,
+      "f1-score": 0.8,
+      "support": 18.0
+    },
+    "accuracy": 0.8444444444444444,
+    "macro avg": {
+      "precision": 0.8531746031746031,
+      "recall": 0.8703703703703703,
+      "f1-score": 0.842979242979243,
+      "support": 45.0
+    },
+    "weighted avg": {
+      "precision": 0.8738095238095238,
+      "recall": 0.8444444444444444,
+      "f1-score": 0.8401465201465201,
+      "support": 45.0
+    }
+  },
+  "confusion_matrix": {
+    "labels": [
+      "landing",
+      "shop",
+      "blog"
+    ],
+    "matrix": [
+      [
+        17,
+        1,
+        0
+      ],
+      [
+        0,
+        9,
+        0
+      ],
+      [
+        4,
+        2,
+        12
+      ]
+    ]
+  },
+  "confidence_threshold_analysis": [
+    {
+      "threshold": 0.0,
+      "coverage": 1.0,
+      "accuracy": 0.8444
+    },
+    {
+      "threshold": 0.5,
+      "coverage": 0.9556,
+      "accuracy": 0.8372
+    },
+    {
+      "threshold": 0.6,
+      "coverage": 0.9111,
+      "accuracy": 0.878
+    },
+    {
+      "threshold": 0.7,
+      "coverage": 0.7556,
+      "accuracy": 0.9412
+    },
+    {
+      "threshold": 0.8,
+      "coverage": 0.6,
+      "accuracy": 0.963
+    },
+    {
+      "threshold": 0.9,
+      "coverage": 0.4222,
+      "accuracy": 0.9474
+    }
+  ],
+  "by_source": [
+    {
+      "source": "demo-store",
+      "n": 1,
+      "accuracy": 1.0
+    },
+    {
+      "source": "direct",
+      "n": 44,
+      "accuracy": 0.8409
+    }
+  ],
+  "by_lang": [
+    {
+      "lang": "en",
+      "n": 44,
+      "accuracy": 0.8409
+    },
+    {
+      "lang": "ru",
+      "n": 1,
+      "accuracy": 1.0
+    }
+  ]
+}

@@ -1,0 +1,14 @@
+__pycache__/
+*.pyc
+.venv/
+.DS_Store
+audio/data/
+*.pt
+video/data/coco/
+video/weights/
+.cache/
+.pytest_cache/
+assignment_sources/
+report/qa/
+*.log
+recsys/data/
