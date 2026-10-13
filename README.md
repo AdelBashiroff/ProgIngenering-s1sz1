@@ -49,10 +49,19 @@ python -m llm.generate 'Зачем нужны тесты API?'
 - `image/results/`, `recsys/results/`, `llm/results/`: результаты реальных запусков.
 - `text/results/`, `audio/results/`, `video/results/`: ранее полученные результаты.
 
-Общий отчёт и его воспроизводимый генератор находятся в `report/`.
+Единый отчёт (12 страниц): [PDF](report/Report_Bashirov_11-411.pdf) ·
+[DOCX](report/Report_Bashirov_11-411.docx).
+Генератор и инструкция сборки находятся в [report/](report/README.md).
 
 ## Исходные задания
 
 [Часть 1](https://disk.yandex.ru/i/eMj2rXfaTH0c8Q) ·
 [Часть 2](https://disk.yandex.ru/i/xdvx9uKuo9cpQA) ·
 [Часть 3](https://disk.yandex.ru/d/k2wM2rv8ueTwFQ)
+
+## Полнота сверки задания
+
+Часть 2 сверена с полным исходным документом. Яндекс Диск не отдал полный текст
+частей 1 и 3; их доступные первые страницы выполнены, но оставшиеся страницы
+(включая Part II RecSys) требуют окончательной сверки. Подробности и подтверждения
+запусков: [verification/requirements-audit.md](verification/requirements-audit.md).

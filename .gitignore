@@ -12,3 +12,4 @@ assignment_sources/
 report/qa/
 *.log
 recsys/data/
+report/qa-*/
