@@ -1,0 +1,81 @@
+ПрИнж 24/25. Семестр 1. Серия заданий 1. (с1сз1)
+Цель задания: научиться создавать приложения с использованием готовых библиотек машинного обучения.
+Концепт задания (это интро, а не текст самого задания):
+В рамках выполнения данного задания Вам необходимо ознакомиться с возможностями ИИ/ML/DL для решения прикладных задач, определить, какие прикладные задачи можно решать с помощью библиотек и моделей машинного обучения, выбрать для себя 4 наиболее интересные задачи и решать их с применением существующих обученных моделей.
+Например, Вы можете решить 4 следующие задачи:
+определения тональности текстов,
+классификации изображений;
+задачи перевода аудио в текст;
+детекции объектов на видео.
+Стоит определить наиболее интересные для себя варианты задач.
+Обратите внимание на то, что необходимо учитывать, что для одного из решений позднее нужно будет разработать API.
+Задание:
+Создайте репозиторий на GitHub.
+Изучите возможности готовых библиотек машинного обучения.
+Сформулируйте задачу, которую Вы хотите решить с помощью инструментов машинного обучения и кратко опишите техничское задание (ТЗ).
+Реализуйте решение выбранной Вами задачи с использованием готовой библиотеки машинного обучения.
+Загрузите реализованное решение в репозиторий на GitHub.
+Оформите документацию на Ваше решение в репозитории.
+(!) Выполнить пункты 3-6 в рамках формирования программного решения для следующих 4 задач:
+1. работа с текстом (например, анализ тональности естественного языка, генерация текста, ...) 
+2. обработки аудио (синтез речи, speech-to-text, command detection, ...)
+3. обработки изображений (классификация, обнаружение объектов на изображении, улучшение качества изображения, ...)
+4. обработки видео (детекция объектов, распознавание жестов, ...)
+
+Решения необходимо реализовывать с применением не менее чем 2ух вариантов фреймворков.
+Например: 
+1.обработка естественного языка (Hugging Face)
+2. обработка аудио (TensorFlow)
+3. обработка изображений (PyTorch)
+4. обработка видео (Hugging Face)
+
+_________
+По результатам выполнения задания формируется Отчёт (в том числе, включающий описание 
+преимуществ выбранной библиотеки, 
+принципа работы Модели и причин её выбора, 
+структуры датасета, 
+метрик оценки качества модели,
+особенностей реализации алгоритма, его эффективности).
+Рекомендуется использовать несколько из следующих библиотек машинного обучения: 
+Hugging Face (https://huggingface.co/ ), 
+TensorFlow Hub (https://www.tensorflow.org/hub ), 
+PyTorch Hub (https://pytorch.org/hub/ ), 
+Keras Applications (https://keras.io/api/applications/ ).
+Пример репозитория – https://github.com/sozykin/ml_sentiment 
+Список источников
+●  Giannakis, M., Dubey, R., Yan, S. et al. Social media and sensemaking patterns in new product development: demystifying the customer sentiment. Ann Oper Res (2020). https://doi.org/10.1007/s10479-020-03775-6 
+●  Software Engineering Body of Knowledge (SWEBOK) (рекомендации IEEE к области знаний «Программная инженерия») – https://www.computer.org/education/bodies-of-knowledge/software-engineering 
+●  Andrew Ng. Специализация Machine Learning Engineering for Production (MLOps) – https://www.coursera.org/specializations/machine-learning-engineering-for-production-mlops 
+●  Hugging Face Course – https://huggingface.co/course/ 
+●  JacobDevlin,Ming-WeiChang,KentonLee,KristinaToutanova.BERT:
+Pre-training of Deep Bidirectional Transformers for Language
+Understanding – https://arxiv.org/abs/1810.04805 
+●  HuggingFaceModels–https://huggingface.co/models 
+●  Система контроля версий git – https://git-scm.com/ 
+●  ScottChacon,BenStraub.ProGit.–https://git-scm.com/book/ru/v2 
+
+Дополнительные материалы
+
+●  Hugging Face Course – https://huggingface.co/course/ 
+●  Ноутбук в Colab с определением тональности текстов на русском
+языке с помощью библиотеки Hugging Face –
+https://colab.research.google.com/drive/136RKDIVzzLkMsiO8H6VRMYO1h0ZsdIgv?usp=sharing 
+●  Ноутбук в Colab с автоматическим переводом с русского на английский язык с помощью библиотеки Hugging Face –https://colab.research.google.com/drive/1MvqqKTOFqMepC1VVEiCxOuhggHQx2a4q?usp=sharing 
+●  Ноутбук в Colab с генерацией аннотаций новостей с помощью библиотеки Hugging Face –https://colab.research.google.com/drive/1P1tAK15CIYFd7WFvGN6ImBD-sQZXUuRi?usp=sharing 
+●  BERT — state-of-the-art языковая модель для 104 языков. Туториал по запуску BERT локально и на Google Colab – https://habr.com/ru/post/436878/ 
+●  Документация на Pipeline в библиотеке Hugging Face –
+https://huggingface.co/transformers/main_classes/pipelines.html 
+●  Готовые модели машинного обучения в библиотеке Hugging Face –https://huggingface.co/models )
+●  Готовые модели машинного обучения в библиотеке TensorFlow –(https://www.tensorflow.org/hub ),
+●  Готовые модели машинного обучения в библиотеке PyTorch –
+https://pytorch.org/hub/ 
+●  Готовые модели машинного обучения в библиотеке Keras –
+https://keras.io/api/applications/
+
+Видео: 
+Видео: Создание репозитория на GitHub –
+https://www.dropbox.com/s/m50b22itd5ndbl5/github.mp4?dl=0 
+Видео: Настройка ключа SSH на GitHub –
+https://www.dropbox.com/s/f5pj7i5i9gjz873/ssh_github.mp4?dl=0 
+
+
