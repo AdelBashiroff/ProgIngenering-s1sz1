@@ -1,0 +1,66 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1000" height="590" viewBox="0 0 1000 590">
+<rect width="100%" height="100%" fill="white"/>
+<text x="140" y="30.0" text-anchor="middle" dominant-baseline="central" font-family="Arial,DejaVu Sans,sans-serif" font-size="25" fill="#172b40">Входные данные</text>
+<text x="500" y="30.0" text-anchor="middle" dominant-baseline="central" font-family="Arial,DejaVu Sans,sans-serif" font-size="25" fill="#172b40">Модуль проекта</text>
+<text x="860" y="30.0" text-anchor="middle" dominant-baseline="central" font-family="Arial,DejaVu Sans,sans-serif" font-size="25" fill="#172b40">Результат</text>
+<rect x="10" y="70" width="260" height="60" rx="5" fill="#edf2f7" stroke="#748599"/>
+<text x="140.0" y="100.0" text-anchor="middle" dominant-baseline="central" font-family="Arial,DejaVu Sans,sans-serif" font-size="22" fill="#172b40">Текст отзыва</text>
+<rect x="350" y="70" width="300" height="60" rx="5" fill="#edf2f7" stroke="#748599"/>
+<text x="500.0" y="100.0" text-anchor="middle" dominant-baseline="central" font-family="Arial,DejaVu Sans,sans-serif" font-size="23" fill="#172b40">text / RuBERT</text>
+<rect x="730" y="70" width="260" height="60" rx="5" fill="#edf2f7" stroke="#748599"/>
+<text x="860.0" y="100.0" text-anchor="middle" dominant-baseline="central" font-family="Arial,DejaVu Sans,sans-serif" font-size="22" fill="#172b40">Метка тональности</text>
+<line x1="275" y1="100" x2="343" y2="100" stroke="#748599" stroke-width="1.5"/>
+<polygon points="343,100 334.13005077220714,104.61779175541483 334.13005077220714,95.38220824458517" fill="#748599"/>
+<line x1="655" y1="100" x2="723" y2="100" stroke="#748599" stroke-width="1.5"/>
+<polygon points="723,100 714.1300507722071,104.61779175541483 714.1300507722071,95.38220824458517" fill="#748599"/>
+<rect x="10" y="155" width="260" height="60" rx="5" fill="#edf2f7" stroke="#748599"/>
+<text x="140.0" y="185.0" text-anchor="middle" dominant-baseline="central" font-family="Arial,DejaVu Sans,sans-serif" font-size="22" fill="#172b40">Аудиофайл WAV</text>
+<rect x="350" y="155" width="300" height="60" rx="5" fill="#edf2f7" stroke="#748599"/>
+<text x="500.0" y="185.0" text-anchor="middle" dominant-baseline="central" font-family="Arial,DejaVu Sans,sans-serif" font-size="23" fill="#172b40">audio / YAMNet</text>
+<rect x="730" y="155" width="260" height="60" rx="5" fill="#edf2f7" stroke="#748599"/>
+<text x="860.0" y="185.0" text-anchor="middle" dominant-baseline="central" font-family="Arial,DejaVu Sans,sans-serif" font-size="22" fill="#172b40">Класс звука</text>
+<line x1="275" y1="185" x2="343" y2="185" stroke="#748599" stroke-width="1.5"/>
+<polygon points="343,185 334.13005077220714,189.61779175541483 334.13005077220714,180.38220824458517" fill="#748599"/>
+<line x1="655" y1="185" x2="723" y2="185" stroke="#748599" stroke-width="1.5"/>
+<polygon points="723,185 714.1300507722071,189.61779175541483 714.1300507722071,180.38220824458517" fill="#748599"/>
+<rect x="10" y="240" width="260" height="60" rx="5" fill="#edf2f7" stroke="#748599"/>
+<text x="140.0" y="270.0" text-anchor="middle" dominant-baseline="central" font-family="Arial,DejaVu Sans,sans-serif" font-size="22" fill="#172b40">Скриншот сайта</text>
+<rect x="350" y="240" width="300" height="60" rx="5" fill="#edf2f7" stroke="#748599"/>
+<text x="500.0" y="270.0" text-anchor="middle" dominant-baseline="central" font-family="Arial,DejaVu Sans,sans-serif" font-size="23" fill="#172b40">image / CLIP</text>
+<rect x="730" y="240" width="260" height="60" rx="5" fill="#edf2f7" stroke="#748599"/>
+<text x="860.0" y="270.0" text-anchor="middle" dominant-baseline="central" font-family="Arial,DejaVu Sans,sans-serif" font-size="22" fill="#172b40">Тип страницы</text>
+<line x1="275" y1="270" x2="343" y2="270" stroke="#748599" stroke-width="1.5"/>
+<polygon points="343,270 334.13005077220714,274.6177917554148 334.13005077220714,265.3822082445852" fill="#748599"/>
+<line x1="655" y1="270" x2="723" y2="270" stroke="#748599" stroke-width="1.5"/>
+<polygon points="723,270 714.1300507722071,274.6177917554148 714.1300507722071,265.3822082445852" fill="#748599"/>
+<rect x="10" y="325" width="260" height="60" rx="5" fill="#edf2f7" stroke="#748599"/>
+<text x="140.0" y="355.0" text-anchor="middle" dominant-baseline="central" font-family="Arial,DejaVu Sans,sans-serif" font-size="22" fill="#172b40">Видеофайл</text>
+<rect x="350" y="325" width="300" height="60" rx="5" fill="#edf2f7" stroke="#748599"/>
+<text x="500.0" y="355.0" text-anchor="middle" dominant-baseline="central" font-family="Arial,DejaVu Sans,sans-serif" font-size="23" fill="#172b40">video / YOLO11</text>
+<rect x="730" y="325" width="260" height="60" rx="5" fill="#edf2f7" stroke="#748599"/>
+<text x="860.0" y="355.0" text-anchor="middle" dominant-baseline="central" font-family="Arial,DejaVu Sans,sans-serif" font-size="22" fill="#172b40">Видео с рамками</text>
+<line x1="275" y1="355" x2="343" y2="355" stroke="#748599" stroke-width="1.5"/>
+<polygon points="343,355 334.13005077220714,359.6177917554148 334.13005077220714,350.3822082445852" fill="#748599"/>
+<line x1="655" y1="355" x2="723" y2="355" stroke="#748599" stroke-width="1.5"/>
+<polygon points="723,355 714.1300507722071,359.6177917554148 714.1300507722071,350.3822082445852" fill="#748599"/>
+<rect x="10" y="410" width="260" height="60" rx="5" fill="#edf2f7" stroke="#748599"/>
+<text x="140.0" y="440.0" text-anchor="middle" dominant-baseline="central" font-family="Arial,DejaVu Sans,sans-serif" font-size="22" fill="#172b40">Оценки MovieLens</text>
+<rect x="350" y="410" width="300" height="60" rx="5" fill="#edf2f7" stroke="#748599"/>
+<text x="500.0" y="440.0" text-anchor="middle" dominant-baseline="central" font-family="Arial,DejaVu Sans,sans-serif" font-size="23" fill="#172b40">recsys / 5 методов</text>
+<rect x="730" y="410" width="260" height="60" rx="5" fill="#edf2f7" stroke="#748599"/>
+<text x="860.0" y="440.0" text-anchor="middle" dominant-baseline="central" font-family="Arial,DejaVu Sans,sans-serif" font-size="22" fill="#172b40">Топ-10 фильмов</text>
+<line x1="275" y1="440" x2="343" y2="440" stroke="#748599" stroke-width="1.5"/>
+<polygon points="343,440 334.13005077220714,444.6177917554148 334.13005077220714,435.3822082445852" fill="#748599"/>
+<line x1="655" y1="440" x2="723" y2="440" stroke="#748599" stroke-width="1.5"/>
+<polygon points="723,440 714.1300507722071,444.6177917554148 714.1300507722071,435.3822082445852" fill="#748599"/>
+<rect x="10" y="495" width="260" height="60" rx="5" fill="#edf2f7" stroke="#748599"/>
+<text x="140.0" y="525.0" text-anchor="middle" dominant-baseline="central" font-family="Arial,DejaVu Sans,sans-serif" font-size="22" fill="#172b40">Текст запроса</text>
+<rect x="350" y="495" width="300" height="60" rx="5" fill="#edf2f7" stroke="#748599"/>
+<text x="500.0" y="525.0" text-anchor="middle" dominant-baseline="central" font-family="Arial,DejaVu Sans,sans-serif" font-size="23" fill="#172b40">llm / Qwen</text>
+<rect x="730" y="495" width="260" height="60" rx="5" fill="#edf2f7" stroke="#748599"/>
+<text x="860.0" y="525.0" text-anchor="middle" dominant-baseline="central" font-family="Arial,DejaVu Sans,sans-serif" font-size="22" fill="#172b40">Текст ответа</text>
+<line x1="275" y1="525" x2="343" y2="525" stroke="#748599" stroke-width="1.5"/>
+<polygon points="343,525 334.13005077220714,529.6177917554148 334.13005077220714,520.3822082445852" fill="#748599"/>
+<line x1="655" y1="525" x2="723" y2="525" stroke="#748599" stroke-width="1.5"/>
+<polygon points="723,525 714.1300507722071,529.6177917554148 714.1300507722071,520.3822082445852" fill="#748599"/>
+</svg>

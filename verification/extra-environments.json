@@ -1,0 +1,13 @@
+{
+  "checked_at": "2026-10-13T16:45:27.856486+00:00",
+  "packages": {
+    "audio/.venv": {
+      "tensorflow": "2.21.0",
+      "tensorflow-hub": "0.16.1"
+    },
+    "video/.venv": {
+      "ultralytics": "8.4.171",
+      "opencv-python": "5.0.0.93"
+    }
+  }
+}

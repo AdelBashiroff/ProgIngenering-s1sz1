@@ -49,7 +49,7 @@ python -m llm.generate 'Зачем нужны тесты API?'
 - `image/results/`, `recsys/results/`, `llm/results/`: результаты реальных запусков.
 - `text/results/`, `audio/results/`, `video/results/`: ранее полученные результаты.
 
-Единый отчёт (12 страниц): [PDF](report/Report_Bashirov_11-411.pdf) ·
+Единый отчёт (17 страниц): [PDF](report/Report_Bashirov_11-411.pdf) ·
 [DOCX](report/Report_Bashirov_11-411.docx).
 Генератор и инструкция сборки находятся в [report/](report/README.md).
 

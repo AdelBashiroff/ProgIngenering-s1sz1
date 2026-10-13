@@ -1,12 +1,15 @@
 """Создать единый DOCX-отчёт из сохранённых результатов. Требуется python-docx, Pillow."""
 import csv
 import json
+import re
+import textwrap
 from pathlib import Path
 from docx import Document
 from docx.shared import Cm, Pt, RGBColor
 from docx.enum.text import WD_ALIGN_PARAGRAPH
 from docx.oxml import OxmlElement
 from docx.oxml.ns import qn
+from docx.opc.constants import RELATIONSHIP_TYPE as RT
 from PIL import Image, ImageDraw
 
 ROOT = Path(__file__).resolve().parents[1]
@@ -23,6 +26,10 @@ llm = js('llm/results/example.json')
 rec = csvrows('recsys/results/comparison.csv')
 protocol = js('recsys/results/protocol.json')
 api = js('verification/api_real_request.json')
+REPO = 'https://github.com/AdelBashiroff/ProgIngenering-s1sz1'
+CODE_REF = '204d00aed33d0ff62f1bf3cfc833ec14eb483a9b'
+section_number = 0
+figure_number = 0
 
 D=Document();s=D.sections[0]
 s.page_width=Cm(21);s.page_height=Cm(29.7)
@@ -54,7 +61,28 @@ D.core_properties.title='Программная инженерия Блок за
 
 def p(t,style=None):return D.add_paragraph(t,style)
 def h(t):D.add_heading(t,level=2)
-def page(t):D.add_page_break();D.add_heading(t,level=1)
+def page(t):
+ global section_number
+ section_number += 1
+ heading=D.add_heading(f'{section_number} '+re.sub(r'^\d+\s+', '', t),level=1)
+ heading.paragraph_format.page_break_before=True
+
+def link(label, url):
+ para = D.add_paragraph()
+ anchor = OxmlElement('w:hyperlink')
+ anchor.set(qn('r:id'), D.part.relate_to(url, RT.HYPERLINK, is_external=True))
+ run = OxmlElement('w:r'); props = OxmlElement('w:rPr')
+ color = OxmlElement('w:color');color.set(qn('w:val'),'234A70');props.append(color)
+ run.append(props);node=OxmlElement('w:t');node.text=label;run.append(node)
+ anchor.append(run);para._p.append(anchor)
+ return para
+
+def excerpt(path, first, last, caption):
+ """Вставить подлинные строки исходника, убрав только общий отступ."""
+ lines=(ROOT/path).read_text().splitlines()
+ assert 1 <= first <= last <= len(lines)
+ link(f'{caption} — {path}, строки {first}–{last}', f'{REPO}/blob/{CODE_REF}/{path}#L{first}-L{last}')
+ code(textwrap.dedent('\n'.join(lines[first-1:last])), size=8.5)
 def table(headers, rows, widths=None):
  t=D.add_table(rows=1,cols=len(headers));t.autofit=False
  if widths:
@@ -89,15 +117,18 @@ def table(headers, rows, widths=None):
  return t
 
 def pic(path,caption,width=14):
+ global figure_number
+ figure_number += 1
+ caption = re.sub(r'^Рисунок \d+ — ', '', caption)
  para=D.add_paragraph();para.alignment=WD_ALIGN_PARAGRAPH.CENTER
  para.paragraph_format.keep_with_next=True
  para.add_run().add_picture(str(ROOT/path),width=Cm(width))
- c=p(caption,'Caption');c.alignment=WD_ALIGN_PARAGRAPH.CENTER
+ c=p(f'Рисунок {figure_number} — {caption}','Caption');c.alignment=WD_ALIGN_PARAGRAPH.CENTER
 
-def code(lines):
+def code(lines, size=9):
  for line in lines.split('\n'):
   para=p(line);para.paragraph_format.space_after=Pt(3)
-  for r in para.runs:r.font.name='Courier New';r.font.size=Pt(9)
+  for r in para.runs:r.font.name='Courier New';r.font.size=Pt(size)
 
 # 1
 for t in ['Казанский федеральный университет','Институт информационных технологий','и интеллектуальных систем']:
@@ -121,6 +152,35 @@ p('В работе используются два ML-фреймворка: PyTo
 h('Репозиторий')
 p('https://github.com/AdelBashiroff/ProgIngenering-s1sz1')
 p('В README каждого модуля описаны ТЗ, установка и запуск. Таблицы предсказаний и метрики сохранены в папках results. Большие веса моделей и исходные наборы данных скачиваются отдельно.')
+
+
+page('Архитектура проекта')
+p('Проект состоит из отдельных Python-модулей. Каждый получает свой тип данных и вызывает готовую модель. Результаты оценки сохраняются в CSV и JSON, графики — в PNG. Базы данных и общего веб-интерфейса здесь нет. Через HTTP доступен классификатор скриншотов, остальные модули запускаются из командной строки.')
+pic('report/figures/architecture_modules.png','Модули проекта и их входы и выходы',16.5)
+p('API использует ту же функцию predict, что и локальный классификатор. После проверки файла изображение переводится в RGB и передаётся CLIP. Веса и текстовые векторы классов кешируются. Поэтому модель не нужно заново загружать для каждого запроса.')
+pic('report/figures/architecture_api.png','Обработка запроса к классификатору',16.5)
+p('Схема показывает основной успешный путь и ошибки внутри обработчика. Если поле file не передано, FastAPI возвращает 422 до вызова обработчика. GET /health проверяет только процесс сервера; для проверки весов нужен запрос к /predict.')
+
+page('Стек и организация запуска')
+p('Для всех компонентов используется Python 3.11. Основные эксперименты выполнены на macOS; PyTorch использует Apple MPS, если он доступен. Таблица показывает версии проверенного окружения, а не минимально допустимые версии из requirements.txt.')
+table(['Область','Технологии и версии','Назначение'],[
+['Текст, Images, LLM','PyTorch 2.14.1; Transformers 4.57.6','Готовые веса, токенизация, обработка изображений, расчёт предсказаний'],
+['Аудио','TensorFlow 2.21.0; TensorFlow Hub 0.16.1','Загрузка YAMNet и классификация звуков'],
+['Видео','Ultralytics 8.4.171; OpenCV 5.0.0.93','YOLO11, чтение и сохранение кадров'],
+['HTTP API','FastAPI 0.143.0; Uvicorn 0.54.0; Pydantic 2.14.1','Маршруты сервера, обработка запросов, схема ответа'],
+['Работа с данными','NumPy 2.4.6; pandas 2.3.3; SciPy 1.17.1','Таблицы, векторы и разреженные матрицы'],
+['Оценка и RecSys','scikit-learn 1.9.1; Matplotlib 3.11.2','Метрики, TF-IDF, косинусное сходство и графики'],
+['Изображения и сбор','Pillow 12.3.0; Playwright 1.63.0','Проверка файлов и получение скриншотов в Chromium'],
+['Тесты','PyTest 9.1.1; HTTPX 0.28.1','Проверка контракта API и расчётов без скачивания весов'],
+['Контроль версий и CI','Git; GitHub Actions; Python 3.11 в CI','Хранение кода и автоматический запуск тестов'],
+],[3.1,6.1,7.7])
+p('У аудио и видео отдельные виртуальные окружения: зависимости TensorFlow и Ultralytics устанавливаются из README соответствующего модуля. Для Images, API, RecSys и LLM достаточно корневого requirements-dev.txt. В CI устанавливаются только пакеты, нужные тестам; нейросети там не запускаются.')
+h('Где находится реализация')
+link('Репозиторий проекта', REPO)
+link('Зависимости основного окружения', REPO+'/blob/'+CODE_REF+'/requirements.txt')
+link('Автотесты', REPO+'/tree/'+CODE_REF+'/tests')
+link('Сценарий GitHub Actions', REPO+'/blob/'+CODE_REF+'/.github/workflows/tests.yml')
+link('Результаты реальных запусков и проверок', REPO+'/tree/'+CODE_REF+'/verification')
 
 #3
 page('2 Анализ тональности текста')
@@ -172,6 +232,14 @@ table(['Порог score','Охват','Accuracy'],[['0,0','100,00%','84,44%'],[
 p('Если не принимать ответы со score ниже 0,7, точность на оставшихся страницах повышается до 97,06%. Однако примерно четверть страниц тогда остаётся без ответа. В API этот порог не включён: его ещё нужно проверить на других данных.')
 p('После проверки в наборе осталось 44 англоязычных сайта и только один русскоязычный. Сравнивать качество по языкам здесь нет смысла. Две страницы принадлежат Notion, а часть магазинов не удалось снять из-за блокировок. Ещё одно ограничение CLIP — уменьшение входа до 224×224: мелкий текст на странице теряется.')
 
+
+page('Примеры скриншотов и ответов модели')
+p('Оба изображения взяты из сохранённого набора, снятого 12 октября. Ниже показаны исходная метка и ответ основной конфигурации pad + descriptive. Примеры подобраны так, чтобы показать и правильный ответ, и ошибку с высоким score.')
+pic('image/data/images/shop/2ec30ac0f31ed5df.jpg','Gymshark — метка shop, ответ shop, score 0,9856',12.8)
+p('В кадре видны карточки товаров и элементы каталога. Небольшое окно выбора региона закрывает часть правой карточки, но тип страницы остаётся понятен. Этот же файл использован для API. Адрес: gymshark.com/collections/t-shirts-tops/mens.')
+pic('image/data/images/blog/be91c7263c3e8e83.jpg','Stack Overflow Blog — метка blog, ответ landing, score 0,9196',12.8)
+p('Верх страницы больше похож на промостраницу, чем на ленту статей. Даже при score 0,9196 ответ оказался неверным. Полная таблица, включая все ошибки, находится в image/results; исходные снимки и метки — в image/data.')
+
 #8
 page('7 API и автоматическое тестирование')
 p('Для доступа к CLIP я добавил FastAPI. POST /predict принимает файл и возвращает label, score, probabilities и имя модели. GET /health проверяет процесс, GET /model показывает настройки, а /docs открывает Swagger UI. Модель загружается при первом запросе. Блокировка не даёт двум запросам одновременно запустить расчёт.')
@@ -180,6 +248,27 @@ table(['Код ответа','Условие'],[['200','Корректное и�
 p(f'Реальный HTTP-запрос со скриншотом магазина завершился кодом 200: label=shop, score={num(api["prediction"]["score"])}; время {api["elapsed_s"]:.3f} с с учётом первого обращения. Ответ сохранён в verification/api_real_request.json.')
 p('В проекте 29 тестов: они проверяют ответы API, сбор ссылок, разделение данных и расчёты RecSys, исключение просмотренных фильмов и холодный старт. В тестах API используется подмена модели через dependency_overrides, поэтому GitHub Actions не скачивает веса. Отдельно выполнен HTTP-запрос с настоящей CLIP.')
 p('GitHub Actions успешно выполнил тесты коммита a354731 (run 38358132244). Проверки запускаются после push, при pull request и вручную. API рассчитан на локальный запуск. При публикации сервера понадобится также ограничить полный размер HTTP-запроса на reverse proxy.')
+
+
+page('Фрагменты реализации Images и API')
+p('Ниже приведены строки из исходников проекта. Ссылки в заголовках ведут на соответствующие строки GitHub. При сборке отчёта код читается из файлов; убирается только общий отступ фрагмента.')
+h('Выбор класса по сходству векторов')
+excerpt('image/clip_classifier.py',136,143,'Листинг 1')
+p('Сначала получаются векторы изображения и описаний классов. classify_features считает softmax по их сходству, затем argmax выбирает метку. В ответ сохраняются score выбранного класса и значения всех трёх классов. Сам по себе softmax не гарантирует правильность ответа.')
+h('Проверка размера загрузки')
+excerpt('api/main.py',47,54,'Листинг 2')
+p('Обработчик читает не больше лимита плюс один байт: этого достаточно, чтобы обнаружить превышение. Пустой файл даёт 400, слишком большой — 413. Дальше Pillow проверяет формат, декодирование и число пикселей. Ограничение всего HTTP-запроса до разбора multipart остаётся задачей серверной конфигурации.')
+h('Вызов модели и обработка сбоя')
+excerpt('api/main.py',69,75,'Листинг 3')
+p('Блокировка не позволяет нескольким запросам одновременно загружать веса и запускать модель. При ошибке загрузки или выполнения возвращается 503, а успешный результат проходит проверку схемы Prediction.')
+
+page('Проверка API на реальном запросе')
+p('13 октября через Swagger UI отправлен JPEG из примера Gymshark. Сервер вернул 200, shop и score 0,9856. На снимке видны команда запроса, адрес, тело ответа и заголовки. Это ответ работающего сервера, а не пример, сгенерированный схемой OpenAPI.')
+pic('report/figures/api_prediction.jpg','Ответ CLIP на запрос из Swagger UI',14)
+h('Автоматическая проверка контракта')
+excerpt('tests/test_api.py',34,41,'Листинг 4')
+p('Тест проверяет код ответа, метку, score, сумму значений и имя модели. Он запускается для PNG, JPEG, WebP и PNG с прозрачностью. Здесь модель заменяется фиксированным предиктором, поэтому score 0,8 отличается от настоящего ответа выше. Другие тесты проверяют повреждённые файлы, лимиты и недоступность модели.')
+link('Успешный запуск 29 тестов в GitHub Actions', REPO+'/actions/runs/38429429913')
 
 #9
 page('8 Постановка задачи рекомендаций')

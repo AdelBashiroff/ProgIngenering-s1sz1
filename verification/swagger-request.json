@@ -1,0 +1,18 @@
+{
+  "captured_at": "2026-10-13T16:39:47.683981+00:00",
+  "url": "http://127.0.0.1:8000/docs#/default/predict_image_predict_post",
+  "request_file": "image/data/images/shop/2ec30ac0f31ed5df.jpg",
+  "status_code": 200,
+  "observed_response": {
+    "label": "shop",
+    "score": 0.9856,
+    "probabilities": {
+      "landing": 0.0083,
+      "shop": 0.9856,
+      "blog": 0.0061
+    },
+    "model": "openai/clip-vit-base-patch32"
+  },
+  "screenshot": "report/figures/api_prediction.jpg",
+  "method": "Interactive Swagger UI request; screenshot captured without modifying page content."
+}
