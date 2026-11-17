@@ -1,0 +1,16 @@
+flowchart LR
+    student["Пользователь<br/>Person<br/>Выбирает фильм"]
+    author["Автор проекта<br/>Person<br/>Запускает проверки"]
+    assistant["Помощник по фильмам<br/>Software System<br/>Единый мультиагентный сценарий"]
+    recsys["Рекомендательный модуль<br/>Software System<br/>Классические методы и LightGCN"]
+    llm["Локальный инференс LLM<br/>Software System<br/>llama.cpp и GGUF"]
+    eval["Среда оценки и наблюдения<br/>Software System<br/>Evals, метрики, траектории"]
+    movielens["GroupLens MovieLens<br/>External Software System<br/>Исходный каталог и оценки"]
+    registry["Hugging Face<br/>External Software System<br/>Версионированные веса"]
+    student -->|"Запрос и предпочтения / проверенный ответ"| assistant
+    author -->|"Проверяет сценарии и качество"| eval
+    assistant -->|"Получает реальные фильмы"| recsys
+    assistant -->|"Планирование, текст, независимая проверка"| llm
+    assistant -->|"События, spans, метрики"| eval
+    movielens -.->|"Загрузка до изолированного запуска"| recsys
+    registry -.->|"Загрузка до изолированного запуска"| llm

@@ -1,0 +1,39 @@
+{
+  "sandbox": "macOS Seatbelt sandbox-exec",
+  "returncode": 0,
+  "checks": [
+    {
+      "name": "read_outside_allowlist",
+      "expected": "denied",
+      "passed": true
+    },
+    {
+      "name": "write_outside_runtime",
+      "expected": "denied",
+      "passed": true
+    },
+    {
+      "name": "external_network",
+      "expected": "denied",
+      "passed": true
+    },
+    {
+      "name": "write_runtime",
+      "expected": "allowed",
+      "passed": true
+    },
+    {
+      "name": "loopback_llm_port",
+      "expected": "allowed",
+      "passed": true
+    },
+    {
+      "name": "stop_own_llm_child",
+      "expected": "allowed",
+      "passed": true
+    }
+  ],
+  "all_passed": true,
+  "policy": "/Users/adelbashiroff/Documents/P_ingenering/ProgIngenering-s1sz1/multi_agent/var/sandbox/agent.sb",
+  "limitation": "Deprecated macOS facility; no VM-level kernel isolation or hard RAM/CPU quotas"
+}

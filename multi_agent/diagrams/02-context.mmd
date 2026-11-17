@@ -1,0 +1,12 @@
+flowchart LR
+    user["Пользователь<br/>Person"]
+    operator["Автор проекта<br/>Person"]
+    assistant["Помощник по фильмам<br/>Software System<br/>Подбирает и объясняет фильмы MovieLens<br/>с независимой проверкой ответа"]
+    engine["llama.cpp<br/>External Software System<br/>Локально обслуживает выбранную LLM"]
+    source["MovieLens 100K<br/>External Dataset<br/>Каталог и исторические оценки"]
+    user -->|"Передаёт запрос и явные предпочтения через CLI"| assistant
+    assistant -->|"Возвращает одобренные фильмы или статус отказа"| user
+    assistant -->|"HTTP на loopback: JSON и схема ответа"| engine
+    engine -->|"Структурированный ответ, токены и время"| assistant
+    source -->|"Локальная копия только для чтения"| assistant
+    operator -->|"Запускает evals и читает результаты"| assistant

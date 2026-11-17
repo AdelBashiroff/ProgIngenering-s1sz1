@@ -1,0 +1,46 @@
+sequenceDiagram
+    actor U as Пользователь
+    participant G as MovieAssistant / LangGraph
+    participant M as Memory / SQLite
+    participant P as Planner / Qwen 0.8B
+    participant T as MovieTools
+    participant W as Writer / Qwen 2B
+    participant V as Code checks + SmolLM3
+    participant O as Observability
+    U->>G: ask(request, user_id)
+    G->>O: Начать trace и траекторию run_id
+    G->>M: Прочитать действующий профиль
+    M-->>G: genres, avoid, revision
+    G->>P: Запрос + профиль + схема Plan
+    P-->>G: tool, method, genres, k
+    G->>G: Проверить схему; normalize_plan уточняет жанры и k из запроса
+    G->>M: Найти кеш по user, plan, profile, version
+    alt Есть актуальный кеш
+        M-->>G: evidence
+    else Нет кеша
+        G->>T: call(plan, user_id, profile)
+        T-->>G: evidence из каталога и RecSys
+        G->>M: Сохранить evidence с TTL
+    end
+    alt Кандидатов нет или tool=refuse
+        G->>G: status=no_results, answer=[]
+    else Есть кандидаты
+        G->>W: Запрос + evidence + схема Draft
+        W-->>G: choices: item_id и reason
+        G->>V: Код проверяет ID; LLM оценивает по evidence
+        V-->>G: issues и verdict
+        opt Есть замечания и это первая попытка
+            G->>W: Повторить с previous_issues
+            W-->>G: Исправленный Draft
+            G->>V: Повторить обе проверки
+            V-->>G: issues и verdict
+        end
+        alt Обе проверки пройдены
+            G->>G: status=approved; названия и жанры из каталога
+        else Остались замечания
+            G->>G: status=rejected, answer=[]
+        end
+    end
+    G->>M: Записать итоговый статус run
+    G->>O: Время, токены, spans, metrics и alerts
+    G-->>U: run_id, status, answer, attempts

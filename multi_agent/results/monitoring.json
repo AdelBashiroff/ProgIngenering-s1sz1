@@ -1,0 +1,34 @@
+{
+  "experiment": "Deliberately unavailable engine; actual ModelRouter failure",
+  "expected_error": "Нет движка или весов. Выполните python -m multi_agent.runtime.setup",
+  "alert_fired": true,
+  "error_metric_present": true,
+  "snapshot": {
+    "time": 1794926026.335914,
+    "spans": 2,
+    "trajectory_events": 3,
+    "alerts": 1,
+    "metrics_present": true,
+    "last_activity_age_s": 0.0004050731658935547,
+    "disk_free_mb": 6969.109375,
+    "healthy": true
+  },
+  "note": "Fault experiment is separate from six normal end-to-end scenarios",
+  "exporter": {
+    "url": "http://127.0.0.1:9098/metrics",
+    "http_status": 200,
+    "error_counter_scraped": true,
+    "monitor_samples": 4,
+    "interval_s": 1
+  },
+  "normal_system_run": {
+    "time": 1794944804.47775,
+    "spans": 34,
+    "trajectory_events": 51,
+    "alerts": 1,
+    "metrics_present": true,
+    "last_activity_age_s": 177.51650261878967,
+    "disk_free_mb": 5262.6015625,
+    "healthy": true
+  }
+}

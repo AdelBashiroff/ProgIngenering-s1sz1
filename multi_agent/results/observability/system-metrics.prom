@@ -1,0 +1,92 @@
+# HELP agent_runs_total Запуски по исходу
+# TYPE agent_runs_total counter
+agent_runs_total{status="approved"} 5.0
+agent_runs_total{status="rejected"} 1.0
+# HELP agent_runs_created Запуски по исходу
+# TYPE agent_runs_created gauge
+agent_runs_created{status="approved"} 1.794944296376201e+09
+agent_runs_created{status="rejected"} 1.794944626961153e+09
+# HELP agent_run_seconds Время полного запуска
+# TYPE agent_run_seconds histogram
+agent_run_seconds_bucket{le="5.0"} 0.0
+agent_run_seconds_bucket{le="15.0"} 0.0
+agent_run_seconds_bucket{le="30.0"} 0.0
+agent_run_seconds_bucket{le="60.0"} 3.0
+agent_run_seconds_bucket{le="120.0"} 6.0
+agent_run_seconds_bucket{le="300.0"} 6.0
+agent_run_seconds_bucket{le="600.0"} 6.0
+agent_run_seconds_bucket{le="+Inf"} 6.0
+agent_run_seconds_count 6.0
+agent_run_seconds_sum 429.9710828749812
+# HELP agent_run_seconds_created Время полного запуска
+# TYPE agent_run_seconds_created gauge
+agent_run_seconds_created 1.794944196520894e+09
+# HELP agent_llm_seconds Время LLM включая загрузку
+# TYPE agent_llm_seconds histogram
+agent_llm_seconds_bucket{le="1.0",role="planner"} 0.0
+agent_llm_seconds_bucket{le="5.0",role="planner"} 0.0
+agent_llm_seconds_bucket{le="15.0",role="planner"} 6.0
+agent_llm_seconds_bucket{le="30.0",role="planner"} 6.0
+agent_llm_seconds_bucket{le="60.0",role="planner"} 6.0
+agent_llm_seconds_bucket{le="120.0",role="planner"} 6.0
+agent_llm_seconds_bucket{le="300.0",role="planner"} 6.0
+agent_llm_seconds_bucket{le="+Inf",role="planner"} 6.0
+agent_llm_seconds_count{role="planner"} 6.0
+agent_llm_seconds_sum{role="planner"} 54.3766
+agent_llm_seconds_bucket{le="1.0",role="writer"} 0.0
+agent_llm_seconds_bucket{le="5.0",role="writer"} 0.0
+agent_llm_seconds_bucket{le="15.0",role="writer"} 0.0
+agent_llm_seconds_bucket{le="30.0",role="writer"} 8.0
+agent_llm_seconds_bucket{le="60.0",role="writer"} 8.0
+agent_llm_seconds_bucket{le="120.0",role="writer"} 8.0
+agent_llm_seconds_bucket{le="300.0",role="writer"} 8.0
+agent_llm_seconds_bucket{le="+Inf",role="writer"} 8.0
+agent_llm_seconds_count{role="writer"} 8.0
+agent_llm_seconds_sum{role="writer"} 160.4364
+agent_llm_seconds_bucket{le="1.0",role="validator"} 0.0
+agent_llm_seconds_bucket{le="5.0",role="validator"} 0.0
+agent_llm_seconds_bucket{le="15.0",role="validator"} 0.0
+agent_llm_seconds_bucket{le="30.0",role="validator"} 8.0
+agent_llm_seconds_bucket{le="60.0",role="validator"} 8.0
+agent_llm_seconds_bucket{le="120.0",role="validator"} 8.0
+agent_llm_seconds_bucket{le="300.0",role="validator"} 8.0
+agent_llm_seconds_bucket{le="+Inf",role="validator"} 8.0
+agent_llm_seconds_count{role="validator"} 8.0
+agent_llm_seconds_sum{role="validator"} 212.44840000000002
+# HELP agent_llm_seconds_created Время LLM включая загрузку
+# TYPE agent_llm_seconds_created gauge
+agent_llm_seconds_created{role="planner"} 1.794944208884141e+09
+agent_llm_seconds_created{role="writer"} 1.794944229215167e+09
+agent_llm_seconds_created{role="validator"} 1.794944254507363e+09
+# HELP agent_llm_tokens_total Токены LLM
+# TYPE agent_llm_tokens_total counter
+agent_llm_tokens_total{direction="input",role="planner"} 4870.0
+agent_llm_tokens_total{direction="output",role="planner"} 310.0
+agent_llm_tokens_total{direction="input",role="writer"} 6884.0
+agent_llm_tokens_total{direction="output",role="writer"} 781.0
+agent_llm_tokens_total{direction="input",role="validator"} 5717.0
+agent_llm_tokens_total{direction="output",role="validator"} 242.0
+# HELP agent_llm_tokens_created Токены LLM
+# TYPE agent_llm_tokens_created gauge
+agent_llm_tokens_created{direction="input",role="planner"} 1.794944208884309e+09
+agent_llm_tokens_created{direction="output",role="planner"} 1.794944208884327e+09
+agent_llm_tokens_created{direction="input",role="writer"} 1.794944229215231e+09
+agent_llm_tokens_created{direction="output",role="writer"} 1.7949442292152388e+09
+agent_llm_tokens_created{direction="input",role="validator"} 1.794944254507464e+09
+agent_llm_tokens_created{direction="output",role="validator"} 1.794944254507473e+09
+# HELP agent_tool_calls_total Вызовы инструментов
+# TYPE agent_tool_calls_total counter
+agent_tool_calls_total{cached="false",tool="recommend"} 4.0
+agent_tool_calls_total{cached="false",tool="history"} 1.0
+agent_tool_calls_total{cached="false",tool="compare"} 1.0
+# HELP agent_tool_calls_created Вызовы инструментов
+# TYPE agent_tool_calls_created gauge
+agent_tool_calls_created{cached="false",tool="recommend"} 1.794944208892632e+09
+agent_tool_calls_created{cached="false",tool="history"} 1.7949444189707289e+09
+agent_tool_calls_created{cached="false",tool="compare"} 1.794944478798574e+09
+# HELP agent_validation_rejections_total Отклонённые ответы
+# TYPE agent_validation_rejections_total counter
+agent_validation_rejections_total 3.0
+# HELP agent_validation_rejections_created Отклонённые ответы
+# TYPE agent_validation_rejections_created gauge
+agent_validation_rejections_created 1.794944196520939e+09

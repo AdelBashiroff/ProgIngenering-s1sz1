@@ -1,0 +1,22 @@
+flowchart TB
+    subgraph mac["Ноутбук автора — macOS arm64"]
+        launcher["Команда запуска<br/>sandbox-exec + Seatbelt policy"]
+        subgraph sandbox["Ограниченный runtime<br/>Граница прав процесса, общее ядро macOS"]
+            python["Python 3.11<br/>CLI, LangGraph, tools, память, OTel"]
+            llama["Дочерний llama-server b12359<br/>Одна LLM в RAM<br/>Qwen small / Qwen writer / SmolLM judge"]
+            python -->|"HTTP: 127.0.0.1:18081"| llama
+        end
+        code[("Read-only<br/>Исходники, промпты и skills")]
+        data[("Read-only<br/>MovieLens, checkpoint, GGUF-веса")]
+        runtime[("Writable runtime<br/>SQLite, JSONL, spans,<br/>metrics.prom, server.log")]
+        probes["Sandbox probes<br/>Проверка запрещённых чтения,<br/>записи и внешнего соединения"]
+        launcher -->|"Запускает с политикой"| python
+        python -->|"Чтение"| code
+        python -->|"Чтение и ранжирование"| data
+        llama -->|"Чтение весов"| data
+        python -->|"Запись"| runtime
+        llama -->|"Запись лога"| runtime
+        probes -.->|"Та же политика"| sandbox
+    end
+    internet["Внешняя сеть<br/>Нет доступа во время ask"]
+    sandbox -.->|"Запрещено политикой"| internet

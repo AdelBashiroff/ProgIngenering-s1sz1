@@ -13,3 +13,8 @@ report/qa/
 *.log
 recsys/data/
 report/qa-*/
+multi_agent/var/
+multi_agent/state/
+multi_agent/results/runtime/
+*.pth
+!recsys/results/advanced/lightgcn.pth

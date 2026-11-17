@@ -1,0 +1,73 @@
+{
+  "summary": {
+    "cases": 6,
+    "success_rate": 0.0,
+    "tool_accuracy": 0.0,
+    "grounding_rate": 0.0,
+    "grounding_scope": "catalog IDs only; text support is checked by LLM judge, not this rate",
+    "p50_s": null,
+    "p95_s": null,
+    "errors": 6,
+    "total_s": 13.204,
+    "peak_rss_self_mb": 296.40625,
+    "rss_scope": "macOS process only; child llama-server memory is not included",
+    "business_metrics": "Offline task completion; CTR/watch time need real users and A/B test",
+    "sample_limit": "Six fixed scenarios, no population-level quality claim"
+  },
+  "cases": [
+    {
+      "id": "comedy",
+      "expected_tool": "recommend",
+      "expected_status": "approved",
+      "result": null,
+      "grounded": false,
+      "success": false,
+      "error": "RuntimeError: llama-server завершился. См. llama-server.log"
+    },
+    {
+      "id": "gnn",
+      "expected_tool": "recommend",
+      "expected_status": "approved",
+      "result": null,
+      "grounded": false,
+      "success": false,
+      "error": "RuntimeError: llama-server завершился. См. llama-server.log"
+    },
+    {
+      "id": "cold_start",
+      "expected_tool": "recommend",
+      "expected_status": "approved",
+      "result": null,
+      "grounded": false,
+      "success": false,
+      "error": "RuntimeError: llama-server завершился. См. llama-server.log"
+    },
+    {
+      "id": "history",
+      "expected_tool": "history",
+      "expected_status": "approved",
+      "result": null,
+      "grounded": false,
+      "success": false,
+      "error": "RuntimeError: llama-server завершился. См. llama-server.log"
+    },
+    {
+      "id": "compare",
+      "expected_tool": "compare",
+      "expected_status": "approved",
+      "result": null,
+      "grounded": false,
+      "success": false,
+      "error": "RuntimeError: llama-server завершился. См. llama-server.log"
+    },
+    {
+      "id": "injection",
+      "expected_tool": "recommend",
+      "expected_status": "approved",
+      "result": null,
+      "grounded": false,
+      "success": false,
+      "error": "RuntimeError: llama-server завершился. См. llama-server.log"
+    }
+  ]
+}

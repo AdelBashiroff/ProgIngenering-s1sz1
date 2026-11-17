@@ -1,0 +1,24 @@
+groups:
+  - name: movie-agent
+    rules:
+      - alert: AgentErrorRate
+        expr: sum(rate(agent_runs_total{status=~"error|rejected"}[15m])) / clamp_min(sum(rate(agent_runs_total[15m])), 0.001) > 0.2
+        for: 5m
+        labels:
+          severity: warning
+        annotations:
+          summary: "Более 20% запусков закончились ошибкой или отказом проверки"
+      - alert: AgentLatencyHigh
+        expr: histogram_quantile(0.95, sum(rate(agent_run_seconds_bucket[15m])) by (le)) > 120
+        for: 5m
+        labels:
+          severity: warning
+        annotations:
+          summary: "p95 времени ответа больше 120 секунд"
+      - alert: AgentExporterDown
+        expr: up{job="movie-agent"} == 0
+        for: 1m
+        labels:
+          severity: warning
+        annotations:
+          summary: "Exporter агента недоступен"

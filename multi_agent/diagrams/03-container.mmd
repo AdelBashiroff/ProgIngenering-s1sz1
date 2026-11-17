@@ -1,0 +1,16 @@
+flowchart TB
+    user["Пользователь<br/>Person"]
+    subgraph system["Помощник по фильмам — Software System"]
+        app["CLI и агентный граф<br/>Container: Python + LangGraph<br/>Управляет ролями, tools и проверками"]
+        sqlite[("Память<br/>Container: SQLite<br/>profiles, cache, runs")]
+        dataset[("Каталог и модели RecSys<br/>Container: локальные файлы<br/>MovieLens и checkpoint LightGCN")]
+        observ[("Результаты наблюдения<br/>Container: локальные файлы<br/>OTel spans, JSONL, metrics.prom, alerts")]
+    end
+    server["Сервер инференса<br/>Container: llama-server<br/>Одна выбранная GGUF-модель за раз"]
+    monitor["Локальная проверка и мониторинг<br/>Container: Python<br/>Читает метрики и результаты evals"]
+    user -->|"Аргументы CLI / JSON-ответ"| app
+    app -->|"SQL с параметрами"| sqlite
+    app -->|"Чтение каталога и ранжирование"| dataset
+    app -->|"POST /v1/chat/completions<br/>127.0.0.1:18081"| server
+    app -->|"Запись событий, spans и метрик"| observ
+    monitor -->|"Чтение артефактов"| observ

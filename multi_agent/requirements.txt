@@ -1,0 +1,4 @@
+-r ../requirements.txt
+langgraph>=1.2.22,<2
+opentelemetry-sdk>=1.45.2,<2
+prometheus-client>=0.26,<1

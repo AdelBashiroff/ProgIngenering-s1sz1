@@ -1,0 +1,28 @@
+flowchart TB
+    input["1. ask: запрос + user_id<br/>Создать run_id, прочитать профиль"]
+    plan["2. Qwen3.5-0.8B<br/>Получить и проверить Plan"]
+    cache{"3. Есть актуальный<br/>ответ в TTL-кеше?"}
+    tool["4. MovieTools<br/>Получить реальные фильмы<br/>и записать кеш"]
+    candidates{"5. Есть фильмы?"}
+    draft["6. Qwen3.5-2B<br/>Написать Draft по evidence"]
+    checks["7. Код проверяет ID и повторы<br/>SmolLM3 отдельно оценивает ответ"]
+    verdict{"8. Проверка пройдена?"}
+    retry{"9. Это первая<br/>попытка автора?"}
+    approved["10a. approved<br/>Собрать ответ из каталога"]
+    rejected["10b. rejected<br/>Не выдавать непроверенный черновик"]
+    empty["10c. no_results<br/>Пустой список и статус"]
+    output["11. Сохранить статус, время,<br/>метрики, spans и траекторию"]
+    input --> plan --> cache
+    cache -->|"Нет"| tool
+    cache -->|"Да"| candidates
+    tool --> candidates
+    candidates -->|"Нет"| empty
+    candidates -->|"Да"| draft
+    draft --> checks --> verdict
+    verdict -->|"Да"| approved
+    verdict -->|"Нет"| retry
+    retry -->|"Да: передать issues"| draft
+    retry -->|"Нет"| rejected
+    approved --> output
+    rejected --> output
+    empty --> output

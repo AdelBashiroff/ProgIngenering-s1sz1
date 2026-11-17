@@ -1,4 +1,4 @@
-# Программная инженерия — блок заданий 1
+# Программная инженерия
 
 Баширов Адель Тагирович, Казанский федеральный университет, ИТИС, группа 11-411.
 
@@ -11,6 +11,11 @@
 | 1 — локальная LLM | Qwen2.5-0.5B-Instruct | [llm](llm/README.md) |
 | 2 — API и тесты | FastAPI + PyTest + GitHub Actions | [api](api/README.md) |
 | 3 — RecSys | Content, item-CF, hybrid, popular, Bayesian | [recsys](recsys/README.md) |
+| Следующий блок — мультиагентная система | LangGraph, три локальные LLM, независимый валидатор, память и наблюдаемость | [multi_agent](multi_agent/README.md) |
+| Усложнённый RecSys | LightGCN, подбор на validation и сравнение шести методов | [эксперимент](recsys/results/advanced/) |
+
+Новый блок находится в `multi_agent/` и `recsys/results/advanced/`.
+Инструкции запуска, ограничения и вопросы к защите описаны в README модулей.
 
 ## Основное окружение
 
@@ -49,9 +54,13 @@ python -m llm.generate 'Зачем нужны тесты API?'
 - `image/results/`, `recsys/results/`, `llm/results/`: результаты реальных запусков.
 - `text/results/`, `audio/results/`, `video/results/`: ранее полученные результаты.
 
-Единый отчёт (17 страниц): [PDF](report/Report_Bashirov_11-411.pdf) ·
+Отчёт первого блока (17 страниц): [PDF](report/Report_Bashirov_11-411.pdf) ·
 [DOCX](report/Report_Bashirov_11-411.docx).
 Генератор и инструкция сборки находятся в [report/](report/README.md).
+
+Отчёт следующего блока: [PDF](report/Block2_Bashirov_11-411.pdf) ·
+[DOCX](report/Block2_Bashirov_11-411.docx). В нём описаны мультиагентная система,
+три испытанные LLM и эксперимент LightGCN.
 
 ## Исходные задания
 
@@ -62,6 +71,7 @@ python -m llm.generate 'Зачем нужны тесты API?'
 ## Полнота сверки задания
 
 Части 1 и 2 сверены с полными исходными текстами. В части 1 используются два
-ML-фреймворка: PyTorch и TensorFlow. RecSys оставлен в текущем объёме по решению
-автора проекта; требования за пределами доступной первой страницы не сверялись.
-Подробности: [verification/requirements-audit.md](verification/requirements-audit.md).
+ML-фреймворка: PyTorch и TensorFlow. Историческая проверка первого блока:
+[requirements-audit.md](verification/requirements-audit.md).
+В новом блоке полный DOCX RecSys получен, красная часть реализована через LightGCN;
+требования MAS и дополнения LLM сохранены в `verification/assignment-*.txt`.

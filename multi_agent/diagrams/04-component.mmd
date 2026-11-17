@@ -1,0 +1,27 @@
+flowchart TB
+    cli["__main__.py<br/>CLI: ask / profile / forget"]
+    subgraph graph["Python-процесс — граф MovieAssistant"]
+        planner["plan<br/>Планировщик + normalize_plan<br/>Plan: tool, method, genres, k"]
+        tools["use_tools<br/>Проверяет кеш и выполняет tool"]
+        writer["write<br/>Автор ответа<br/>Draft: ID и объяснения"]
+        validator["validate<br/>check_draft + независимая LLM<br/>Verdict и issues"]
+        finish["finish<br/>approved / rejected / no_results"]
+        planner --> tools
+        tools -->|"Есть кандидаты"| writer
+        tools -->|"Пустой результат"| finish
+        writer --> validator
+        validator -->|"Замечания и попыток меньше двух"| writer
+        validator -->|"Одобрен или исчерпаны попытки"| finish
+    end
+    router["ModelRouter · llm.py<br/>Qwen small / Qwen writer / SmolLM judge"]
+    memory["Memory · memory.py<br/>Профиль, TTL-кеш, статусы run"]
+    movie["MovieTools · tools.py<br/>recommend / history / search / compare"]
+    obs["Observability · observability.py<br/>OTel, metrics, JSONL, alerts"]
+    cli --> planner
+    planner -->|"planner"| router
+    writer -->|"writer"| router
+    validator -->|"validator: другое семейство"| router
+    tools --> movie
+    tools --> memory
+    planner -.->|"Профиль при старте"| memory
+    graph -.->|"События и интервалы всех узлов"| obs

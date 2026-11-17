@@ -1,0 +1,33 @@
+# HELP agent_runs_total Запуски по исходу
+# TYPE agent_runs_total counter
+agent_runs_total{status="error"} 1.0
+# HELP agent_runs_created Запуски по исходу
+# TYPE agent_runs_created gauge
+agent_runs_created{status="error"} 1.794926026335468e+09
+# HELP agent_run_seconds Время полного запуска
+# TYPE agent_run_seconds histogram
+agent_run_seconds_bucket{le="5.0"} 1.0
+agent_run_seconds_bucket{le="15.0"} 1.0
+agent_run_seconds_bucket{le="30.0"} 1.0
+agent_run_seconds_bucket{le="60.0"} 1.0
+agent_run_seconds_bucket{le="120.0"} 1.0
+agent_run_seconds_bucket{le="300.0"} 1.0
+agent_run_seconds_bucket{le="600.0"} 1.0
+agent_run_seconds_bucket{le="+Inf"} 1.0
+agent_run_seconds_count 1.0
+agent_run_seconds_sum 0.009566416963934898
+# HELP agent_run_seconds_created Время полного запуска
+# TYPE agent_run_seconds_created gauge
+agent_run_seconds_created 1.7949260258316522e+09
+# HELP agent_llm_seconds Время LLM включая загрузку
+# TYPE agent_llm_seconds histogram
+# HELP agent_llm_tokens_total Токены LLM
+# TYPE agent_llm_tokens_total counter
+# HELP agent_tool_calls_total Вызовы инструментов
+# TYPE agent_tool_calls_total counter
+# HELP agent_validation_rejections_total Отклонённые ответы
+# TYPE agent_validation_rejections_total counter
+agent_validation_rejections_total 0.0
+# HELP agent_validation_rejections_created Отклонённые ответы
+# TYPE agent_validation_rejections_created gauge
+agent_validation_rejections_created 1.7949260258316958e+09

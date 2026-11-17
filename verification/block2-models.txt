@@ -1,0 +1,6 @@
+llama.cpp b12359 commit b1b770d90d94cad9e9ea5b993bdbc383a522fb28
+Engine archive SHA256 OK
+SHA256 OK: Qwen3.5-0.8B-Q8_0.gguf
+SHA256 OK: Qwen_Qwen3.5-2B-Q4_K_M.gguf
+SHA256 OK: SmolLM3-Q4_K_M.gguf
+Full details: multi_agent/results/runtime_verification.json

@@ -1,0 +1,72 @@
+classDiagram
+    class State {
+        run_id
+        user_id
+        request
+        profile
+        plan
+        evidence
+        draft
+        issues
+        attempts
+        status
+        answer
+    }
+    class MovieAssistant {
+        ask(request, user_id)
+        plan(state)
+        use_tools(state)
+        write(state)
+        validate(state)
+        next_step(state)
+        finish(state)
+        close()
+    }
+    class ModelRouter {
+        generate(role, system, payload, schema)
+        generate_model(model_key, system, payload, schema)
+        close()
+    }
+    class MovieTools {
+        version
+        call(plan, user_id, profile)
+    }
+    class Memory {
+        profile(user_id)
+        update_profile(user_id, genres, avoid)
+        forget(user_id)
+        cache_key(user_id, plan, version)
+        cached(key)
+        cache(key, value)
+        record_run(run_id, user_id, status)
+    }
+    class Observability {
+        span(name)
+        event(run_id, node)
+        llm(role, result)
+        finish(run_id, status, elapsed)
+    }
+    class Plan {
+        tool
+        method
+        genres
+        avoid
+        query
+        k
+        check_genres()
+    }
+    class Draft {
+        choices
+    }
+    class Verdict {
+        approved
+        issues
+    }
+    MovieAssistant --> State : передаёт между узлами
+    MovieAssistant --> ModelRouter : вызывает роли LLM
+    MovieAssistant --> MovieTools : вызывает разрешённые tools
+    MovieAssistant --> Memory : читает и обновляет
+    MovieAssistant --> Observability : записывает
+    MovieAssistant --> Plan : валидирует
+    MovieAssistant --> Draft : валидирует
+    MovieAssistant --> Verdict : валидирует

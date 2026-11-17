@@ -1,0 +1,13 @@
+........................................................................ [ 98%]
+.                                                                        [100%]
+=============================== warnings summary ===============================
+tests/test_lightgcn.py::test_graph_normalization_and_propagation
+  /Users/adelbashiroff/Documents/P_ingenering/ProgIngenering-s1sz1/recsys/lightgcn.py:23: UserWarning: Sparse invariant checks are implicitly disabled. Memory errors (e.g. SEGFAULT) will occur when operating on a sparse tensor which violates the invariants, but checks incur performance overhead. To silence this warning, explicitly opt in or out. See `torch.sparse.check_sparse_tensor_invariants.__doc__` for guidance.  (Triggered internally at /Users/runner/work/pytorch/pytorch/aten/src/ATen/Context.cpp:855.)
+    return torch.sparse_coo_tensor(torch.stack([source, target]), weights,
+
+tests/test_lightgcn.py::test_train_checkpoint_and_fallback
+  /Users/adelbashiroff/Documents/P_ingenering/ProgIngenering-s1sz1/.venv/lib/python3.11/site-packages/torch/serialization.py:2244: UserWarning: Validating sparse tensor invariants because weights_only=True; this is an O(nnz) scan per sparse tensor and may be slow for large checkpoints.
+    torch._utils._validate_loaded_sparse_tensors(weights_only=weights_only)
+
+-- Docs: https://docs.pytest.org/en/stable/how-to/capture-warnings.html
+73 passed, 2 warnings in 10.84s

@@ -1,0 +1,30 @@
+{
+  "trials": [
+    {
+      "layers": 1,
+      "best_epoch": 200,
+      "validation_ndcg_at_10": 0.13529417507136401,
+      "epochs_run": 200,
+      "seconds": 18.428691959008574
+    },
+    {
+      "layers": 2,
+      "best_epoch": 200,
+      "validation_ndcg_at_10": 0.12452395377885139,
+      "epochs_run": 200,
+      "seconds": 19.097748166997917
+    }
+  ],
+  "selected": {
+    "dimensions": 32,
+    "learning_rate": 0.01,
+    "regularization": 0.0001,
+    "seed": 42,
+    "layers": 1,
+    "epochs": 200
+  },
+  "criterion": "maximum validation NDCG@10; test unused in selection",
+  "check_every": 10,
+  "patience_checks": 4,
+  "max_epochs": 200
+}

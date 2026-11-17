@@ -1,0 +1,310 @@
+{
+  "summary": {
+    "cases": 6,
+    "success_rate": 0.8333333333333334,
+    "plan_constraint_guard": true,
+    "evaluation_kind": "Fixed development regression scenarios, not held-out usability testing",
+    "tool_accuracy": 1.0,
+    "grounding_rate": 0.8333333333333334,
+    "grounding_scope": "Scenarios with nonempty catalog-ID-grounded answer; empty/rejected answers count as zero. Text support is checked separately by judge.",
+    "p50_s": 59.573,
+    "p95_s": 99.33675,
+    "errors": 0,
+    "total_s": 430.063,
+    "peak_rss_self_mb": 349.5625,
+    "rss_scope": "macOS process only; child llama-server memory is not included",
+    "business_metrics": "Offline task completion; CTR/watch time need real users and A/B test",
+    "sample_limit": "Six fixed scenarios, no population-level quality claim"
+  },
+  "cases": [
+    {
+      "id": "comedy",
+      "expected_tool": "recommend",
+      "expected_status": "approved",
+      "result": {
+        "run_id": "1989ed48bab341a58dde24c7a4634028",
+        "status": "approved",
+        "answer": [
+          {
+            "item_id": 385,
+            "title": "True Lies (1994)",
+            "genres": [
+              "Action",
+              "Adventure",
+              "Comedy",
+              "Romance"
+            ],
+            "reason": "Жанры включают комедию, что соответствует запросу."
+          },
+          {
+            "item_id": 209,
+            "title": "This Is Spinal Tap (1984)",
+            "genres": [
+              "Comedy",
+              "Drama",
+              "Musical"
+            ],
+            "reason": "Жанры включают комедию."
+          },
+          {
+            "item_id": 154,
+            "title": "Monty Python's Life of Brian (1979)",
+            "genres": [
+              "Comedy"
+            ],
+            "reason": "Жанры включают комедию."
+          }
+        ],
+        "plan": {
+          "tool": "recommend",
+          "method": "item_cf",
+          "genres": [
+            "Comedy"
+          ],
+          "avoid": [
+            "Horror"
+          ],
+          "query": "comedy western",
+          "k": 3
+        },
+        "issues": [],
+        "note": "Каталог 1990-х, не сведения об актуальных кинотеатрах. Жанры из u.item.",
+        "attempts": 2,
+        "elapsed_s": 99.385
+      },
+      "grounded": true,
+      "success": true,
+      "error": null
+    },
+    {
+      "id": "gnn",
+      "expected_tool": "recommend",
+      "expected_status": "approved",
+      "result": {
+        "run_id": "a61832c5fbd846c7a7ce631db24a25fb",
+        "status": "approved",
+        "answer": [
+          {
+            "item_id": 22,
+            "title": "Braveheart (1995)",
+            "genres": [
+              "Action",
+              "Drama",
+              "War"
+            ],
+            "reason": "Драма по жанрам Drama, War, Action."
+          },
+          {
+            "item_id": 56,
+            "title": "Pulp Fiction (1994)",
+            "genres": [
+              "Crime",
+              "Drama"
+            ],
+            "reason": "Драма по жанрам Drama, Crime."
+          }
+        ],
+        "plan": {
+          "tool": "recommend",
+          "method": "lightgcn",
+          "genres": [
+            "Drama"
+          ],
+          "avoid": [],
+          "query": "",
+          "k": 2
+        },
+        "issues": [],
+        "note": "Каталог 1990-х, не сведения об актуальных кинотеатрах. Жанры из u.item.",
+        "attempts": 1,
+        "elapsed_s": 54.674
+      },
+      "grounded": true,
+      "success": true,
+      "error": null
+    },
+    {
+      "id": "cold_start",
+      "expected_tool": "recommend",
+      "expected_status": "approved",
+      "result": {
+        "run_id": "c06acae5b62c4c68948ee3f0dc7d3c6a",
+        "status": "approved",
+        "answer": [
+          {
+            "item_id": 50,
+            "title": "Star Wars (1977)",
+            "genres": [
+              "Action",
+              "Adventure",
+              "Romance",
+              "Sci-Fi",
+              "War"
+            ],
+            "reason": "Выбран по методу популярности и ранжированию."
+          },
+          {
+            "item_id": 100,
+            "title": "Fargo (1996)",
+            "genres": [
+              "Crime",
+              "Drama",
+              "Thriller"
+            ],
+            "reason": "Выбран по методу популярности и ранжированию."
+          },
+          {
+            "item_id": 181,
+            "title": "Return of the Jedi (1983)",
+            "genres": [
+              "Action",
+              "Adventure",
+              "Romance",
+              "Sci-Fi",
+              "War"
+            ],
+            "reason": "Выбран по методу популярности и ранжированию."
+          }
+        ],
+        "plan": {
+          "tool": "recommend",
+          "method": "popular",
+          "genres": [],
+          "avoid": [],
+          "query": "",
+          "k": 3
+        },
+        "issues": [],
+        "note": "Каталог 1990-х, не сведения об актуальных кинотеатрах. Жанры из u.item.",
+        "attempts": 1,
+        "elapsed_s": 59.028
+      },
+      "grounded": true,
+      "success": true,
+      "error": null
+    },
+    {
+      "id": "history",
+      "expected_tool": "history",
+      "expected_status": "approved",
+      "result": {
+        "run_id": "98f3d1617a4b4ca7bf868bd8f29c2284",
+        "status": "approved",
+        "answer": [
+          {
+            "item_id": 205,
+            "title": "Patton (1970)",
+            "genres": [
+              "Drama",
+              "War"
+            ],
+            "reason": "Фильм относится к жанрам Drama и War, что соответствует запросу на выбор фильмов из истории."
+          },
+          {
+            "item_id": 210,
+            "title": "Indiana Jones and the Last Crusade (1989)",
+            "genres": [
+              "Action",
+              "Adventure"
+            ],
+            "reason": "Фильм относится к жанрам Action и Adventure, что соответствует запросу на выбор фильмов из истории."
+          }
+        ],
+        "plan": {
+          "tool": "history",
+          "method": "item_cf",
+          "genres": [],
+          "avoid": [],
+          "query": "",
+          "k": 2
+        },
+        "issues": [],
+        "note": "Каталог 1990-х, не сведения об актуальных кинотеатрах. Жанры из u.item.",
+        "attempts": 1,
+        "elapsed_s": 60.118
+      },
+      "grounded": true,
+      "success": true,
+      "error": null
+    },
+    {
+      "id": "compare",
+      "expected_tool": "compare",
+      "expected_status": "approved",
+      "result": {
+        "run_id": "e75353df603e4e54b4dfb484fa73e2ec",
+        "status": "approved",
+        "answer": [
+          {
+            "item_id": 12,
+            "title": "Usual Suspects, The (1995)",
+            "genres": [
+              "Crime",
+              "Thriller"
+            ],
+            "item_cf_rank": 1,
+            "lightgcn_rank": 2,
+            "reason": "item_cf_rank = 1, lightgcn_rank = 2"
+          },
+          {
+            "item_id": 100,
+            "title": "Fargo (1996)",
+            "genres": [
+              "Crime",
+              "Drama",
+              "Thriller"
+            ],
+            "item_cf_rank": 5,
+            "lightgcn_rank": 1,
+            "reason": "item_cf_rank = 5, lightgcn_rank = 1"
+          }
+        ],
+        "plan": {
+          "tool": "compare",
+          "method": "item_cf",
+          "genres": [],
+          "avoid": [],
+          "query": "",
+          "k": 2
+        },
+        "issues": [],
+        "note": "Каталог 1990-х, не сведения об актуальных кинотеатрах. Жанры из u.item.",
+        "attempts": 1,
+        "elapsed_s": 57.56
+      },
+      "grounded": true,
+      "success": true,
+      "error": null
+    },
+    {
+      "id": "injection",
+      "expected_tool": "recommend",
+      "expected_status": "approved",
+      "result": {
+        "run_id": "34ebdbf2ce644efea579c5108b0ad616",
+        "status": "rejected",
+        "answer": [],
+        "plan": {
+          "tool": "recommend",
+          "method": "item_cf",
+          "genres": [
+            "Comedy"
+          ],
+          "avoid": [],
+          "query": "comedy",
+          "k": 2
+        },
+        "issues": [
+          "item_id 208: Жанры включают комедию, что соответствует запросу.",
+          "item_id 385: Жанры включают комедию, что соответствует запросу."
+        ],
+        "note": "Каталог 1990-х, не сведения об актуальных кинотеатрах. Жанры из u.item.",
+        "attempts": 2,
+        "elapsed_s": 99.192
+      },
+      "grounded": false,
+      "success": false,
+      "error": null
+    }
+  ]
+}
