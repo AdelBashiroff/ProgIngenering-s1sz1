@@ -379,11 +379,11 @@ def main():
                  'и интеллектуальных систем']:
         paragraph = r.p(line); paragraph.alignment = WD_ALIGN_PARAGRAPH.CENTER
     r.p(''); r.p(''); r.p('')
-    paragraph = r.p('Мультиагентный помощник по фильмам', 'Title')
+    paragraph = r.p('Отчёт по программной инженерии', 'Title')
+    paragraph.alignment = WD_ALIGN_PARAGRAPH.CENTER
+    paragraph = r.p('Мультиагентный помощник по фильмам', 'Subtitle')
     paragraph.alignment = WD_ALIGN_PARAGRAPH.CENTER
     paragraph = r.p('Графовые рекомендации LightGCN', 'Subtitle')
-    paragraph.alignment = WD_ALIGN_PARAGRAPH.CENTER
-    paragraph = r.p('Программная инженерия\nОтчёт по следующему блоку заданий')
     paragraph.alignment = WD_ALIGN_PARAGRAPH.CENTER
     r.p(''); r.p(''); r.p('')
     paragraph = r.p('Выполнил\nБаширов Адель Тагирович\nГруппа 11-411')
